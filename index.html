@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- BOOSTRAP -->
+    <!-- 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,33 +16,41 @@
         href="https://fonts.googleapis.com/css2?family=Anton&family=Asap:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-
+    <link rel="stylesheet" href="./src/styles/style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 </head>
 
 <body>
-    <h1>TIC-TAC-TOE</h1>
+    <nav>
+
+        <h1>index</h1>
+    </nav>
+    <main>
+        main
+    </main>
+<!-- BOTON MODO 1 -->
+    <a href="./src/pages/machine-human.html"> <button class="option-selector" onmouseover="backgrounChanger()"
+            onmouseout="normalBackground()" id="machine-human">Machine vs human</button> </a>
+<!-- BOTON MODO 2 -->
+    <a href="./src/pages/machine-machine.html"> <button class="option-selector" onmouseover="backgrounChanger2()"
+            onmouseout="normalBackground()" id="human-human">human vs human</button> </a>
 
 
-    <div class="game">
-        <div class="grid-item"><button id="matris0,0" class="cell-button">1</button></div>
-        <div class="grid-item"><button id="matris0,1" class="cell-button">2</button></div>
-        <div class="grid-item"><button id="matris0,2" class="cell-button">3</button></div>
-        <div class="grid-item"><button id="matris1,0" class="cell-button">4</button></div>
-        <div class="grid-item"><button id="matris1-1" class="cell-button">5</button></div>
-        <div class="grid-item"><button id="matris1-2" class="cell-button">6</button></div>
-        <div class="grid-item"><button id="matris2-0" class="cell-button">7</button></div>
-        <div class="grid-item"><button id="matris2-1" class="cell-button">8</button></div>
-        <div class="grid-item"><button id="matris2-2" class="cell-button">9</button></div>
-    </div>
-    <script src="./dist/script.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+
+
+
+
+
+    <!-- <script src="./dist/script.js"></script> -->
+    <script src="/dist/script.js"></script>
+
+    <!-- BOOSTRAP -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
