@@ -15,13 +15,19 @@ const matris9 = document.getElementById("matris2-2") ;
 //Crear evento click para cada boton especific
 // buscar el boton en un for primero //jonas
 function backgroundChanger() {
-    
-
+   // crear una funcnion que reciba dos argumentos fila, columna
     //Intentar css con estar wars o strange
     //Crear funcnion 
-
     //Buscar como cambie el tamaño de las imagenes
 //Crear un contador de turnos para el backgron changer 
+
+
+//Crear barra de progreso
+//Modal en algumn lugar, un solo boton
+
+//Crear una funcnion para 
+//averiguar turno maximo turno minimo
+
 
 }
 
