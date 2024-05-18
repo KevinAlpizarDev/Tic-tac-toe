@@ -2,12 +2,21 @@
     margin: 0;
 }
 
+:root{
+
+    --red-tittle: #eb1c24;
+    --blanco:  white;
+    
+
+}
+
 body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/src/img/indexs.jpg");
-    position: absolute;
+
     color: wheat;
+ 
 }
 
 header{
@@ -15,15 +24,24 @@ header{
     justify-content: start;
     align-items: center;
     margin-left: 40px;
-    width: 100%;
+    width: 90%;
     height: 200px;
-    background-color: aqua;
-    opacity: 0.4;
+    /* background-color: aqua; */
+    background-color: transparent;
+   
     color: rgb(255, 255, 255);
+    /* FUENTE DE GOOGLE */
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: 'Stranger Things', sans-serif;
+                                                
+    color: var(--blanco);
+    font-size: 50px;
 }
 
 main{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,11 +54,21 @@ section{
 display: flex;
 justify-content: start;
 align-items: end;
+
     width: 1000px;
-    height: 300px;
-    background-color: aquamarine;
+    height: 320px;
+    /* background-color: aquamarine; */
+    background-color: transparent;
+ position: fixed;
+
 }
 
 section > h2{
-color: black;
+    margin-left: 50px;
+color: var(--red-tittle);
+ /* FUENTE POPPINS */
+ font-family: "Poppins", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 30px;
 }
