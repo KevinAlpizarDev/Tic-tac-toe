@@ -1,15 +1,84 @@
 *{
   margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 
-body{
+nav{
+  width: 100%;
+height: 100px;
+background-color: rgb(229, 0, 0);
+opacity: 0.4;
+position: fixed;
+
+}
+
+
+
+
+nav h1{
+  z-index: 1;
+  color: white;
+  font-size: 60px;
+  z-index: 20;
+}
+main{
+  background-color: rgb(70, 44, 10);
+  height: 575px;
+  width: 100%;
+
   /* background-color: aqua; */
-  background-image: url("/src/img/default-backgound-body.webp");
+  background-image: url("/src/img/mv.webp");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+   background-position: center ; 
+   /* La imagen se centrará dentro del div  */
+
+
 
   }
-/* 
+
+
+
+  .contenido{
+top: 12vh;
+background-color: rgb(251, 251, 251);
+  }
+
+
+  .contenido p{
+    color: aliceblue;
+  }
+/*
+
   nav h1 {
     font-size: 40px;
     color: white;
   } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+/* 
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine; */
+    width: 100%;
+    height: 100px;
+    background-color: rgb(229, 0, 0);
+    opacity: 0.4;
+    position: fixed;
+  }
