@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/src/img/indexs.jpg");
+    position: absolute;
+    color: wheat;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 40px;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    opacity: 0.4;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 50px;
+
+}
+
+section{
+display: flex;
+justify-content: start;
+align-items: end;
+    width: 1000px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+section > h2{
+color: black;
+}
