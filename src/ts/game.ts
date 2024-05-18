@@ -17,61 +17,59 @@
 
 //   })
 // })
-console.log(8);
+// BOTONES A LOS CUALES REACCIONAR
+let mode1 = document.getElementById("mode-1")
+let mode2 = document.getElementById("mode2")
 
+// ESTABLECE UN BACKGROUND POR DEFECTO
+ document.getElementById("main")!.style.backgroundImage = "url('../img/mv.webp";
+
+ //FUNCION QUE ALMACENA LAS ACCIONES A EJECUTAR
 function backgrounChanger() {
-  
-  //  (document as any).main.style.backgroundImage = "url('./src/img/im.jpg')";
-
-  //  (document as any).main.style.backgroundSize = "1200px 1200px";
-  //  (document as any).main.style.backgroundRepeat = "no-repeat"
-  document.getElementById('main')!.style.backgroundImage = "url('./src/img/bike.webp')";
-  document.getElementById('main')!.style.backgroundSize = "cover";
-  document.getElementById('main')!.style.backgroundRepeat = "no-repeat";
+  document.getElementById("main")!.style.backgroundImage = "url('../img/bike.webp";
 }
-
-
+ //FUNCION QUE ALMACENA LAS ACCIONES A EJECUTAR
 function normalBackground() {
-  
-  document.body.style.backgroundImage = "url('./src/img/bike.webp')";
-  "1000px 600px"
-document.body.style.backgroundSize = "100% 500px";
-  document.body.style.backgroundRepeat = "no-repeat"
 
-  
+document.getElementById("main")!.style.backgroundImage = "url('../img/mv.webp')";
+
 }
 
 
-// function backgrounChanger2() {
-//   // document.body.style.backgroundColor = "blue";
-//   document.body.style.backgroundImage = "url('./src/img/first-mode-background.webp')";
-//   document.body.style.backgroundSize = "1000px 600px"
-//   document.body.style.backgroundRepeat = "no-repeat"
-// }
+// EVENTO DE ESCUCHA A EL MODO1
+mode1!.addEventListener("mouseover", function () {
+  backgrounChanger();
+  console.log(4);
+});
+mode1!.addEventListener("mouseout", function () {
+normalBackground()
+  console.log(4);
+});
+
+
 
 
 
 // function backgrounChanger() {
-//   x.style.backgroundColor = "red";
+//   document.getElementById("main")!.style.backgroundColor = "red";
+// }
+
+// mode1!.addEventListener("mouseover", function () {
+//   backgrounChanger();
+//   console.log(4);
+// });
+// mode1!.addEventListener("mouseout", function () {
+// normalBackground()
+//   console.log(4);
+// });
+
+
+
+
+// function normalBackground() {
+
+// document.getElementById("main")!.style.backgroundImage = "url('https://ejemplo.com/imagen.jpg')";
 
 // }
 
-// function normalImg(x) {
-//   x.style.height = "32px";
-//   x.style.width = "32px";
-// }
-
-
-// function backgroundChanger(id, color) {
-//   x.style.height = "64px";
-//   x.style.width = "64px";
-// }
-
-
-
-
-
-// function normalImg(x) {
-//   x.style.height = "32px";
-//   x.style.width = "32px";
-// }
+// normalBackground()

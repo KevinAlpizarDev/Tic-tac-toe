@@ -1,15 +1,20 @@
 "use strict";
 {
 }
-console.log(8);
+let mode1 = document.getElementById("mode-1");
+let mode2 = document.getElementById("mode2");
+document.getElementById("main").style.backgroundImage = "url('../img/mv.webp";
 function backgrounChanger() {
-    document.getElementById('main').style.backgroundImage = "url('./src/img/bike.webp')";
-    document.getElementById('main').style.backgroundSize = "cover";
-    document.getElementById('main').style.backgroundRepeat = "no-repeat";
+    document.getElementById("main").style.backgroundImage = "url('../img/bike.webp";
 }
 function normalBackground() {
-    document.body.style.backgroundImage = "url('./src/img/bike.webp')";
-    "1000px 600px";
-    document.body.style.backgroundSize = "100% 500px";
-    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById("main").style.backgroundImage = "url('../img/mv.webp')";
 }
+mode1.addEventListener("mouseover", function () {
+    backgrounChanger();
+    console.log(4);
+});
+mode1.addEventListener("mouseout", function () {
+    normalBackground();
+    console.log(4);
+});
