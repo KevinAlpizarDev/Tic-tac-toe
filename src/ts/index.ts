@@ -66,6 +66,8 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 // <audio value="PLAY" id="mystical" src="./src/sounds/mystical.mp3"></audio>
 function playFuntion(id: HTMLMediaElement) {
   return id.play();
+  
 }  
+console.log(3);
 // playFuntion(mystical)
   
