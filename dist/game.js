@@ -5,7 +5,7 @@ let mode1 = document.getElementById("mode-1");
 let mode2 = document.getElementById("mode2");
 document.getElementById("main").style.backgroundImage = "url('../img/mv.webp";
 function backgrounChanger() {
-    document.getElementById("main").style.backgroundImage = "url('../img/bike.webp";
+    document.getElementById("main").style.backgroundImage = "url('../img/03stranger-2-superJumbo-v2.jpg";
 }
 function normalBackground() {
     document.getElementById("main").style.backgroundImage = "url('../img/mv.webp')";
