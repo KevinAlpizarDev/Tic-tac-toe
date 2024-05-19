@@ -11,10 +11,10 @@ let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 enjoyButton!.addEventListener("click", function () {
 
 let userName = {
-  characterName: characterName!.value
+  characterName: characterName.value
 }
 
-nameData!.push(userName);
+nameData.push(userName);
 console.log(nameData);
 
 
