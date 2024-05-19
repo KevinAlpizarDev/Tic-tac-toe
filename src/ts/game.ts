@@ -25,9 +25,16 @@ let mode2 = document.getElementById("mode2")
  document.getElementById("main")!.style.backgroundImage = "url('../img/mv.webp";
 
  //FUNCION QUE ALMACENA LAS ACCIONES A EJECUTAR
+// function backgrounChanger() {
+//   document.getElementById("main")!.style.backgroundImage = "url('../img/bike.webp";
+// }
 function backgrounChanger() {
-  document.getElementById("main")!.style.backgroundImage = "url('../img/bike.webp";
+  document.getElementById("main")!.style.backgroundImage = "url('../img/03stranger-2-superJumbo-v2.jpg";
 }
+
+
+
+
  //FUNCION QUE ALMACENA LAS ACCIONES A EJECUTAR
 function normalBackground() {
 
