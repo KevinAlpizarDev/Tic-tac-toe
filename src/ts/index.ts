@@ -1,40 +1,30 @@
+// SE SELECCIONA EL INPUT DEL INDEX
+let characterName = (document.getElementById("character-name") as HTMLInputElement)
+// SE SELECCIONA EL BOTON JOIN DEL INDEX
+let enjoyButton  = document.getElementById("enjoy-button")
+///////////////////////////////////////////////////////////////////////////////////
+let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 
-let enjoyButton  = document.getElementById("enjoy-button")!
-// let price = document.getElementById("price")
-// let addButton = document.getElementById("add-button")
+//EVENTO DE ESCUCHA AL BOTON JOIN DEL INDEX
+enjoyButton!.addEventListener("click", function () {
 
-// let productData: null = JSON.parse(localStorage.getItem("productData")) || []
+let userName = {
+  characterName: characterName!.value
+}
 
-// // console.log(productData);
-
-// addButton!.addEventListener("click", function () {
-
-
-// let characterName = {
-//     product: product.value,
-//     unities: unities.value,
-//     price: price.value
-
-// }
-
-// productData.push(data);
-// // console.log(productData);
+nameData!.push(userName);
+console.log(nameData);
 
 
-// localStorage.setItem("productData", JSON.stringify(productData))
+localStorage.setItem("nameData", JSON.stringify(nameData))
 
 
+enjoy()
 
-
-// })
-
-// EVENTO DE ESCUCHA AL BOTON ENJOY
-// <button onclick="myFunction()">Take me to w3schools.com</button>
-
-enjoyButton.addEventListener("click", function () {
-    enjoy()
 })
+
 
 function enjoy() {
   location.href = "./src/pages/game.html";
+  console.log("Clicks");
 }
