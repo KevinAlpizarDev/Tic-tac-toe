@@ -2,9 +2,11 @@
 let characterName = (document.getElementById("character-name") as HTMLInputElement)
 // SE SELECCIONA EL BOTON JOIN DEL INDEX
 let enjoyButton  = document.getElementById("enjoy-button")
+//AUDIO
+let mystical = document.getElementById("mystical")
+
 ///////////////////////////////////////////////////////////////////////////////////
 let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
-
 //EVENTO DE ESCUCHA AL BOTON JOIN DEL INDEX
 enjoyButton!.addEventListener("click", function () {
 
@@ -20,6 +22,7 @@ localStorage.setItem("nameData", JSON.stringify(nameData))
 
 
 enjoy()
+// playFuntion(mystical)
 
 })
 
@@ -27,4 +30,15 @@ enjoy()
 function enjoy() {
   location.href = "./src/pages/game.html";
   console.log("Clicks");
+
+  
 }
+
+
+
+// <audio value="PLAY" id="mystical" src="./src/sounds/mystical.mp3"></audio>
+// function playFuntion(id: HTMLMediaElement) {
+//   return id.play();
+// }  
+// playFuntion(mystical)
+  
