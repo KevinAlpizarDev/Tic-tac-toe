@@ -3,10 +3,10 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 // SE SELECCIONA EL BOTON JOIN DEL INDEX
 let enjoyButton  = document.getElementById("enjoy-button")
 //AUDIO
-let mystical = document.getElementById("mystical")
+// let mystical = document.getElementById("mystical")
 
 ///////////////////////////////////////////////////////////////////////////////////
-let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
+let nameData = JSON.parse(localStorage.getItem("nameData") || '[]'); // [name., name2]
 //EVENTO DE ESCUCHA AL BOTON JOIN DEL INDEX
 enjoyButton!.addEventListener("click", function () {
 

@@ -1,7 +1,6 @@
 "use strict";
 let characterName = document.getElementById("character-name");
 let enjoyButton = document.getElementById("enjoy-button");
-let mystical = document.getElementById("mystical");
 let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 enjoyButton.addEventListener("click", function () {
     let userName = {
