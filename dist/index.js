@@ -19,3 +19,4 @@ function enjoy() {
 function playFuntion(id) {
     return id.play();
 }
+console.log(3);

@@ -6,7 +6,7 @@ let mode2 = document.getElementById("mode2");
 document.getElementById("main").style.backgroundImage = "url('../img/mv.webp";
 function backgrounChanger() {
     document.getElementById("main").style.transition = "ease-in-out 1s";
-    document.getElementById("main").style.backgroundImage = "url('../img/03stranger-2-superJumbo-v2.jpg";
+    document.getElementById("main").style.backgroundImage = "url('../img/fotonoticia_20170928112151_1200.jpg";
 }
 function normalBackground() {
     document.getElementById("main").style.transition = "ease-in-out 1s";
