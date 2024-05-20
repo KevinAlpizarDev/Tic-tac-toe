@@ -1,58 +1,51 @@
-const cellbuttonn = document.querySelectorAll(".cellButton")
-//TRAIGO EL H1 DEL HTML
+const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 botones por medio de la clase
+document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
 
-
-
-// console.log(cellbuttonn.length);
-
-
-//DECLARACION DE FUNCIONES
-let counter = 0 //VALOR INICIAL
+let counter = 0 //Valor inicial
 //PRIMERA FUNCION
- const pulserCounter = () => counter ++  //VARIABLE DE INCREMENTO
+ const pulserCounter = () => counter ++  //Variable de ingremento 
 //SEGUNDA FUNCION PARFUNTION
-const toggleFunction = (counter: number) =>  counter % 2 === 0 //RECIBE LA VARIABLE COUNTER COMO PARAMETRO 
-
-let button: Element;
-//LOOP BUTTON
-cellbuttonn.forEach((button, index) => {//RECORRO LOS BOTONES ESPECIFICOS POR SU INDEX
-  button.addEventListener("click", () => {
-
-     //pulserCounter()//EJECUTA LA FUNCNION
-     //console.log(pulserCounter());
-     
-    if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //TRUE EJECUTA LA FUNCNION DENTRO DEL IF
-
+const toggleFunction = (counter: number) =>  counter % 2 === 0 //Recibe el valor counter como parametro 
+//LOOP PARA TODOS LOS BOTONES 
+cellbuttonn.forEach((button, index) => {//Recorro el boton especifico por su index 
+  button.addEventListener("click", () => { //Evento escucha por medio del parametro button
+//CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON
+    if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //True ejecuta la funcion dentro del if
+//CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
       cellbuttonn[index].textContent = "x";// "X" al boton especifico
-   
-   
-
+//SE SUMA UNO AL CONTADOR
       pulserCounter()
-    //  console.log( pulserCounter());
-     
-      // console.log(cellbuttonn[index].textContent)
-       
     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
-     
+//CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
       cellbuttonn[index].textContent = "o"
-// console.log(pulserCounter());
-pulserCounter()
-      // console.log( pulserCounter());
-      // console.log(cellbuttonn[index].textContent)
-
+//SE SUMA UNO AL CONTADOR
+    pulserCounter()
     }
-
-if (validate(0) ) {
-  console.log("You got it");
-  
-}
-
-
+//OPERADOR TERNARIO 
+allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
 
   })
 
 })
 
+//Valores vara los parametros necesarios en la nuevas funciones
+const firstCaracter = "x"
+const secondCaracter = "o"
 
-const validate = ( position: number ) => cellbuttonn[position].textContent == "x"|| cellbuttonn[position].textContent == "o"
+//Funtion llamada validate              
+const validate = ( position: number, caracter: string ) =>
+   cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter
 
+
+const allPosicionsWin = () =>{
+  // PRIMERA FILA HORIZONTAL
+  return (validate(3, firstCaracter ) && validate(4, firstCaracter) && validate(5, firstCaracter )) || //con "X" 
+  validate(3, secondCaracter ) && validate(4, secondCaracter) && validate(5, secondCaracter) || //CON "O"
+  // SEGUNDA FILA HORIZONTAL
+validate(0, firstCaracter ) && validate(1, firstCaracter) && validate(2, firstCaracter ) || //con "X" 
+  validate(0, secondCaracter ) && validate(1, secondCaracter) && validate(2, secondCaracter) ||//CON "O"
+//   //TERCERA FILA HORIZONTAL
+ (validate(6, firstCaracter ) && validate(7, firstCaracter) && validate(8, firstCaracter )) || //con "X" 
+    validate(6, secondCaracter ) && validate(7, secondCaracter) && validate(8, secondCaracter) //CON "O"
+
+}
