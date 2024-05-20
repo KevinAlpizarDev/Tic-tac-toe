@@ -24,6 +24,7 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
         }
 
 
+console.log(1);
 
 // // SE SELECCIONA EL INPUT DEL INDEX
 // let characterName = (document.getElementById("character-name") as HTMLInputElement)
