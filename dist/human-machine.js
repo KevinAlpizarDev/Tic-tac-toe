@@ -26,5 +26,15 @@ const allPosicionsWin = () => {
         validate(0, firstCaracter) && validate(1, firstCaracter) && validate(2, firstCaracter) ||
         validate(0, secondCaracter) && validate(1, secondCaracter) && validate(2, secondCaracter) ||
         (validate(6, firstCaracter) && validate(7, firstCaracter) && validate(8, firstCaracter)) ||
-        validate(6, secondCaracter) && validate(7, secondCaracter) && validate(8, secondCaracter);
+        validate(6, secondCaracter) && validate(7, secondCaracter) && validate(8, secondCaracter) ||
+        (validate(0, firstCaracter) && validate(3, firstCaracter) && validate(6, firstCaracter)) ||
+        validate(0, secondCaracter) && validate(3, secondCaracter) && validate(6, secondCaracter) ||
+        validate(1, firstCaracter) && validate(4, firstCaracter) && validate(7, firstCaracter) ||
+        validate(1, secondCaracter) && validate(4, secondCaracter) && validate(7, secondCaracter) ||
+        (validate(2, firstCaracter) && validate(5, firstCaracter) && validate(8, firstCaracter)) ||
+        validate(2, secondCaracter) && validate(5, secondCaracter) && validate(8, secondCaracter) ||
+        (validate(0, firstCaracter) && validate(4, firstCaracter) && validate(8, firstCaracter)) ||
+        validate(0, secondCaracter) && validate(4, secondCaracter) && validate(8, secondCaracter) ||
+        (validate(2, firstCaracter) && validate(4, firstCaracter) && validate(6, firstCaracter)) ||
+        validate(2, secondCaracter) && validate(4, secondCaracter) && validate(6, secondCaracter);
 };

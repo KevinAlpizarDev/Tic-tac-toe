@@ -36,7 +36,6 @@ const secondCaracter = "o"
 const validate = ( position: number, caracter: string ) =>
    cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter
 
-
 const allPosicionsWin = () =>{
   // PRIMERA FILA HORIZONTAL
   return (validate(3, firstCaracter ) && validate(4, firstCaracter) && validate(5, firstCaracter )) || //con "X" 
@@ -46,6 +45,27 @@ validate(0, firstCaracter ) && validate(1, firstCaracter) && validate(2, firstCa
   validate(0, secondCaracter ) && validate(1, secondCaracter) && validate(2, secondCaracter) ||//CON "O"
 //   //TERCERA FILA HORIZONTAL
  (validate(6, firstCaracter ) && validate(7, firstCaracter) && validate(8, firstCaracter )) || //con "X" 
-    validate(6, secondCaracter ) && validate(7, secondCaracter) && validate(8, secondCaracter) //CON "O"
+    validate(6, secondCaracter ) && validate(7, secondCaracter) && validate(8, secondCaracter) || //CON "O"
+// PRIMERA FILA VERTICAL
+    (validate(0, firstCaracter ) && validate(3, firstCaracter) && validate(6, firstCaracter )) || //con "X" 
+  validate(0, secondCaracter ) && validate(3, secondCaracter) && validate(6, secondCaracter) || //CON "O"
+  // SEGUNDA FILA VERTICAL
+validate(1, firstCaracter ) && validate(4, firstCaracter) && validate(7, firstCaracter ) || //con "X" 
+  validate(1, secondCaracter ) && validate(4, secondCaracter) && validate(7, secondCaracter) ||//CON "O"
+//   //TERCERA FILA VERTICAL
+ (validate(2, firstCaracter ) && validate(5, firstCaracter) && validate(8, firstCaracter )) || //con "X" 
+    validate(2, secondCaracter ) && validate(5, secondCaracter) && validate(8, secondCaracter) ||//CON "O"
+//   //FILA DIAGONAL 1
+(validate(0, firstCaracter ) && validate(4, firstCaracter) && validate(8, firstCaracter )) || //con "X" 
+validate(0, secondCaracter ) && validate(4, secondCaracter) && validate(8, secondCaracter) ||//CON "O"
+//   //FILA DIAGONAL 2
+(validate(2, firstCaracter ) && validate(4, firstCaracter) && validate(6, firstCaracter )) || //con "X" 
+validate(2, secondCaracter ) && validate(4, secondCaracter) && validate(6, secondCaracter) //CON "O"
 
 }
+
+//////////////////DOBLE FOR//////////////////////////////////////////////////////////////////////////////////
+// for(startx;startx <= endx; startx++){
+//   for(starty; starty <= endy; starty++){ 
+//    console.log(startx, endx, starty, endy); 
+//  } }
