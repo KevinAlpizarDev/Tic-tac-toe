@@ -24,13 +24,13 @@
 
 /////////////////////////////////////////////
 
-const cellButtons = document.querySelectorAll('.cellButton');  //NodeListOf<Element>
+// const cellButtons = document.querySelectorAll('.cellButton');  //NodeListOf<Element>
 
-cellButtons.forEach((button, index) => {
-    button.addEventListener("click", (e) => {
-        cellButtons[index].textContent = "X";
-    })
-})
+// cellButtons.forEach((button, index) => {
+//     button.addEventListener("click", (e) => {
+//         cellButtons[index].textContent = "X";
+//     })
+// })
 
 
 
@@ -46,8 +46,8 @@ cellButtons.forEach((button, index) => {
 
 
 //const cellButtons = document.querySelectorAll('.cellButton');  //NodeListOf<Element>
-let clickCellCount = 0;
-document.querySelectorAll('.cellButton')
+// let clickCellCount = 0;
+// document.querySelectorAll('.cellButton')
  
 
  
@@ -65,5 +65,43 @@ document.querySelectorAll('.cellButton')
 // document.querySelectorAll('.cellButton')
 // })
 
+/////////////////////////////////////////////////////////////////////////
+
+// const cellbuttonn = document.querySelectorAll(".cellButton")
 
 
+// //DECLARACION DE FUNCIONES
+// let counter = 0 //VALOR INICIAL
+// //PRIMERA FUNCION
+//  const pulserCounter = () => counter ++  //VARIABLE DE INCREMENTO
+// //SEGUNDA FUNCION PARFUNTION
+// const toggleFunction = (counter: number) =>  counter % 2 === 0 //RECIBE LA VARIABLE COUNTER COMO PARAMETRO 
+
+//LOOP BUTTON
+// cellbuttonn.forEach((button, index) => {//RECORRO LOS BOTONES ESPECIFICOS POR SU INDEX
+//   button.addEventListener("click", () => {
+
+//      //pulserCounter()//EJECUTA LA FUNCNION
+//      //console.log(pulserCounter());
+     
+//     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //TRUE EJECUTA LA FUNCNION DENTRO DEL IF
+
+//       cellbuttonn[index].textContent = "x";// "X" al boton especifico
+
+//      console.log( pulserCounter());
+     
+//       console.log(cellbuttonn[8].textContent)
+       
+//     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
+
+//       cellbuttonn[index].textContent = "0"
+
+//       // console.log( pulserCounter());
+//       console.log(cellbuttonn[index].textContent)
+
+//     }
+    
+
+//   })
+
+// })
