@@ -5,12 +5,13 @@ const pulserCounter = () => counter++;
 const toggleFunction = (counter) => counter % 2 === 0;
 cellbuttonn.forEach((button, index) => {
     button.addEventListener("click", () => {
-        pulserCounter();
-        if (!toggleFunction(counter)) {
-            cellbuttonn[index].textContent = "X";
+        if (toggleFunction(counter) && cellbuttonn[index].textContent == "") {
+            cellbuttonn[index].textContent = "x";
+            pulserCounter();
         }
-        else {
+        else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "0";
+            pulserCounter();
         }
     });
 });
