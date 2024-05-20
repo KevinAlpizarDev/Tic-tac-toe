@@ -5,3 +5,5 @@ cellButtons.forEach((button, index) => {
         cellButtons[index].textContent = "X";
     });
 });
+let clickCellCount = 0;
+document.querySelectorAll('.cellButton');

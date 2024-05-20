@@ -32,3 +32,38 @@ cellButtons.forEach((button, index) => {
     })
 })
 
+
+
+// for (let i= 0; i < cellButtons.length; i++) {
+   
+//     cellButtons[i].addEventListener("click", () =>{
+
+// console.log(cellButtons);
+
+
+//     })
+// }
+
+
+//const cellButtons = document.querySelectorAll('.cellButton');  //NodeListOf<Element>
+let clickCellCount = 0;
+document.querySelectorAll('.cellButton')
+ 
+
+ 
+
+// cellButtons!let pulser =  clickCellCount ++
+// const totalButtons = 9
+// let remainingturns = totalButtons - pulser
+// //   pulser  <= totalButtons ? console.log(pulser): clickCellCount = 9
+// // pulser <= totalButtons ? remainingturns
+// //  : pulser = 9
+// // console.log(pulser);
+// remainingturns >= 0 ? pulser : remainingturns = 0
+// console.log(remainingturns);
+
+// document.querySelectorAll('.cellButton')
+// })
+
+
+
