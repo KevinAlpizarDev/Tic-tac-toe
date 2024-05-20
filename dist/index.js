@@ -16,7 +16,6 @@ function enjoy() {
     location.href = "./src/pages/game.html";
     console.log("Clicks");
 }
-console.log(1);
 function playFuntion(id) {
     return id.play();
 }
