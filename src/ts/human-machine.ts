@@ -30,7 +30,6 @@ allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : d
   })
 
 })
-
 //Valores vara los parametros necesarios en la nuevas funciones
 const firstCaracter = "x"
 const secondCaracter = "o"
