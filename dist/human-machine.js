@@ -8,11 +8,11 @@ cellbuttonn.forEach((button, index) => {
     button.addEventListener("click", () => {
         if (toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "x";
-            pulserCounter();
+            console.log(pulserCounter());
         }
         else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "o";
-            pulserCounter();
+            console.log(pulserCounter());
         }
         allPosicionsWin() ? document.getElementById("header").innerHTML = "WINNER!" : document.getElementById("header").innerHTML = "NOTHING";
     });

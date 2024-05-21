@@ -13,13 +13,16 @@ cellbuttonn.forEach((button, index) => {//Recorro el boton especifico por su ind
     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //True ejecuta la funcion dentro del if
 //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
       cellbuttonn[index].textContent = "x";// "X" al boton especifico
-//SE SUMA UNO AL CONTADOR
-      pulserCounter()
+//SE SUMA UNO AL CONTADOR|
+      // pulserCounter()
+      console.log( pulserCounter());
+      
     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
 //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
       cellbuttonn[index].textContent = "o"
 //SE SUMA UNO AL CONTADOR
-    pulserCounter()
+    // pulserCounter()
+    console.log( pulserCounter());
     }
 //OPERADOR TERNARIO 
 allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
