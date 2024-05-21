@@ -1,3 +1,41 @@
+// const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 botones por medio de la clase
+// document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
+
+// //DECLARACION DE FUNCIONES
+// let counter = 0 //VALOR INICIAL
+// //PRIMERA FUNCION
+//  const pulserCounter = () => counter ++  //VARIABLE DE INCREMENTO
+// //SEGUNDA FUNCION PARFUNTION
+// const toggleFunction = (counter: number) =>  counter % 2 === 0 //RECIBE LA VARIABLE COUNTER COMO PARAMETRO 
+
+// //LOOP BUTTON
+// cellbuttonn.forEach((button, index) => {//RECORRO LOS BOTONES ESPECIFICOS POR SU INDEX
+//   button.addEventListener("click", () => {
+  
+     
+//     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //TRUE EJECUTA LA FUNCNION DENTRO DEL IF
+
+//       cellbuttonn[index].textContent = "x";// "X" al boton especifico
+
+//       pulserCounter();
+       
+//     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
+
+//       cellbuttonn[index].textContent = "0"
+//       pulserCounter();
+       
+
+//     }
+// //OPERADOR TERNARIO 
+// allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
+
+//   })
+
+// })
+
+
+
+
 const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 botones por medio de la clase
 document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
 
@@ -67,8 +105,9 @@ validate(2, secondCaracter ) && validate(4, secondCaracter) && validate(6, secon
 
 }
 
-//////////////////DOBLE FOR//////////////////////////////////////////////////////////////////////////////////
-// for(startx;startx <= endx; startx++){
-//   for(starty; starty <= endy; starty++){ 
-//    console.log(startx, endx, starty, endy); 
-//  } }
+
+
+
+
+
+ 
