@@ -16,7 +16,5 @@ function enjoy() {
     location.href = "./src/pages/game.html";
     console.log("Clicks");
 }
-function playFuntion(id) {
-    return id.play();
-}
-console.log(3);
+let id;
+const play = (id) => id.play();

@@ -14,21 +14,22 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 
             localStorage.setItem("nameData", JSON.stringify(nameData));
 
-            enjoy();
+            
+            // characterName.textContent !== "" ?  enjoy() : console.log(3);
+            
+           enjoy()
             // playFuntion(mystical);
         });
 
         function enjoy() {
+           
             location.href = "./src/pages/game.html";
             console.log("Clicks");
         }
 
 
-// <audio value="PLAY" id="mystical" src="./src/sounds/mystical.mp3"></audio>
-function playFuntion(id: HTMLMediaElement) {
-  return id.play();
-  
-}  
-console.log(3);
-// playFuntion(mystical)
-  
+
+//////////////PLay funtion
+let id
+const play = ( id:  HTMLMediaElement) => id.play()
+
