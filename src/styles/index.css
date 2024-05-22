@@ -15,11 +15,20 @@ body{
     background-size: cover;
     background-image: url("/src/img/indexs.jpg");
 
-    color: wheat;
+ 
  
 }
 
-header{
+label{
+
+    color: wheat;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+h1{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -30,22 +39,118 @@ header{
     background-color: transparent;
    
     color: rgb(255, 255, 255);
+   
     /* FUENTE DE GOOGLE */
    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal; 
     font-family: 'Stranger Things', sans-serif; 
     color: var(--blanco);
-    font-size: 50px;
+    font-size: 100px;
+    animation-name: leftToRight; /* Aquí se define correctamente el nombre de la animación */
+    animation-duration: 4s;
+ 
 }
 
+
+
+
+@keyframes leftToRight {
+
+
+   
+0%{
+    opacity: 0;
+    transform: translateX(-40px);
+}
+/* 
+    30%{
+
+
+    } */
+    60%{
+opacity: 0.1;
+}
+
+80%{
+    opacity: 1;
+    transform: translateX(50px);
+    }
+
+    80%{
+        opacity: 0.1;
+    }
+
+
+    100%{
+
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+
+
+
+
+}
+#character-name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2px;
+    padding-left: 20px;
+    margin: 3px 3px 3px 10px;
+    font-size: 15px;
+    color: var(--red-tittle);
+ 
+
+}
+
+
+
+
+
+#enjoy-button{
+
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color:  #dc3545 ;
+
+        border: 1px solid  #dc3545 ;
+        height: 40px;
+        width: 65px;
+
+        border-radius: 5px;
+        color: white;
+      
+        transition: 0.2s;
+
+        transition: 0.2s;
+        margin-left: 4px;
+    
+    }
+  
+  
+  #enjoy-button:hover{
+    background-color:  #c53240 ;
+  border: 1px solid  #c93140  ;
+  
+  }
+  
 main{
-    /* background-color: blue; */
+    /* background-color: rgb(87, 87, 121); */
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    width: 1200px;
-    height: 50px;
+    width: 1100px;
+    height: 80px;
+    padding-bottom: 20px;
 
 }
 
@@ -69,5 +174,10 @@ color: var(--red-tittle);
  font-family: "Poppins", sans-serif;
  font-weight: 400;
  font-style: normal;
- font-size: 30px;
+ font-size: 35px;
+}
+section > h2 span{
+    font-weight: 600;
+    font-size: 60px;
+
 }

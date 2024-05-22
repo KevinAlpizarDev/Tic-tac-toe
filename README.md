@@ -158,3 +158,10 @@ GAMEEEE
 //////////////////////////////////////////////////
 
 https://www.onicode.com/efecto-neon-css/
+
+
+
+Amarillo Neon (#FFFF00): Un color clásico de los años 80 que resalta y llama la atención.
+Rosa Neon (#FF1493): Este ya lo tienes en tu código y es perfecto para ese toque vibrante y retro.
+Verde Neon (#39FF14): Otro color popular de los años 80 que se ve increíblemente vibrante.
+Azul Neon (#00FFFF): Un tono azul eléctrico que evoca la nostalgia de la época y complementa bien los otros colores.

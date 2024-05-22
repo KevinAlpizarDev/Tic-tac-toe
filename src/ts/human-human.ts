@@ -13,18 +13,16 @@ const demoPulse= (demoCounter:number) => demoCounter % 2 == 0
 //////////////////////////////////////
 cellButtons.forEach((button, index) => {
     button!.addEventListener("click", () => {
-        cellButtons[index].innerHTML="X"
+        cellButtons[index].innerHTML="x"
         if (cellButtons[index].textContent == "") { 
             console.log(1);
             cellButtons[index].innerHTML = "x"
             demoPulser()
-            // console.log(demoPulser());
-        }  else{
+        }
+        else{
             setTimeout(() => {
                 cellButtons[demoRandom()].innerHTML = "o"
-                console.log(2);
             }, 1000);
-            // console.log(cellButtons[demoRandom()]);
             demoPulser()
         }
     } )

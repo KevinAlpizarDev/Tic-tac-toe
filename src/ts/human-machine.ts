@@ -2,17 +2,13 @@ const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 bo
 document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
 
 let counter = 0 //Valor inicial
-//PRIMERA FUNCION
- const pulserCounter = () => counter ++  //Variable de ingremento 
-//SEGUNDA FUNCION PARFUNTION
-const toggleFunction = (counter: number) =>  counter % 2 === 0 //Recibe el valor counter como parametro 
-//LOOP PARA TODOS LOS BOTONES 
-cellbuttonn.forEach((button, index) => {//Recorro el boton especifico por su index 
+
+ const pulserCounter = () => counter ++  //PRIMERA FUNCION //Variable de ingremento 
+const toggleFunction = (counter: number) =>  counter % 2 === 0 //SEGUNDA FUNCION PARFUNTION //Recibe el valor counter como parametro 
+cellbuttonn.forEach((button, index) => { //LOOP PARA TODOS LOS BOTONES  //Recorro el boton especifico por su index 
   button.addEventListener("click", () => { //Evento escucha por medio del parametro button
-//CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON
-    if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //True ejecuta la funcion dentro del if
-//CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
-      cellbuttonn[index].textContent = "x";// "X" al boton especifico
+    if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON  //True ejecuta la funcion dentro del if
+      cellbuttonn[index].textContent = "x"; //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX // "X" al boton especifico
 //SE SUMA UNO AL CONTADOR|
       // pulserCounter()
       console.log( pulserCounter());
@@ -26,7 +22,6 @@ cellbuttonn.forEach((button, index) => {//Recorro el boton especifico por su ind
     }
 //OPERADOR TERNARIO 
 allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
-
   })
 
 })
