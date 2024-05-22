@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-
-
-
     <!-- STRANGER THINGS FONT -->
     <link href="https://fonts.cdnfonts.com/css/stranger-things" rel="stylesheet">
     <!-- POPPINS GOOGLE FONT -->
@@ -22,16 +19,21 @@
 <body>
 
     <header>
-        <h1>You vs Demo</h1>
+        <h1>One Demo</h1>
     </header>
 
-    <main>
+    <main>  
+        <!-- <form action="" method="post">
+            <label for="html">Who you are?</label><br>
+            <input id="character-name" placeholder="Character´s name" type="text" required>
+            <button type="submit" onmouseover="play(mystical)" id="enjoy-button">Enjoy</button>
+        </form>       -->
 
-        <label for="html">Who you are?</label><br>
-
-        <input id="character-name" placeholder="Character´s name" type="text">
-        <button onmouseover="play(mystical)" id="enjoy-button">Enjoy</button>
-
+        <form action="" method="post">
+            <label for="html">Who you are?</label><br>
+            <input id="character-name" placeholder="Character´s name" type="text" required>
+            <button type="button" id="enjoy-button" onmouseover="play(mystical)" >Enjoy</button>
+        </form>   
 
 
         <audio id="mystical" src="/src/sounds/mystical.mp3"></audio>

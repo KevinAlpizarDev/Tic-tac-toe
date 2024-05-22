@@ -17,8 +17,9 @@ body{
     justify-content: center;
     align-items: center;
 
+
 }
-.game {
+.div-container {
     display: grid;
 
     grid-template-columns: auto auto auto;
@@ -26,8 +27,11 @@ body{
   width: 450px;
   height: 450px;
   padding: 10px;
+
+
+
   }
-  .demoButtons{
+  .cellButton{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +42,6 @@ body{
     padding: 20px;
     font-size: 30px;
     text-align: center;
+
+
   }

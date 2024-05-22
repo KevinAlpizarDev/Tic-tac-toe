@@ -1,40 +1,24 @@
 "use strict";
-const cellbuttonn = document.querySelectorAll(".cellButton");
-document.getElementById("header").innerHTML = "INITIAL TEXT!";
-let counter = 0;
-const pulserCounter = () => counter++;
-const toggleFunction = (counter) => counter % 2 === 0;
-cellbuttonn.forEach((button, index) => {
+const cellButtons = document.querySelectorAll(".demoButtons");
+document.getElementById("demo").innerHTML = "Playing";
+let demoCounter = 0;
+const demoPulser = () => demoCounter++;
+const demoLength = cellButtons.length;
+const demoRandom = () => Math.floor(Math.random() * demoLength);
+const demoPulse = (demoCounter) => demoCounter % 2 == 0;
+cellButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
-        if (toggleFunction(counter) && cellbuttonn[index].textContent == "") {
-            cellbuttonn[index].textContent = "x";
-            console.log(pulserCounter());
+        cellButtons[index].innerHTML = "x";
+        if (cellButtons[index].textContent == "") {
+            console.log(1);
+            cellButtons[index].innerHTML = "x";
+            demoPulser();
         }
-        else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "") {
-            cellbuttonn[index].textContent = "o";
-            console.log(pulserCounter());
+        else {
+            setTimeout(() => {
+                cellButtons[demoRandom()].innerHTML = "o";
+            }, 1000);
+            demoPulser();
         }
-        allPosicionsWin() ? document.getElementById("header").innerHTML = "WINNER!" : document.getElementById("header").innerHTML = "NOTHING";
     });
 });
-const firstCaracter = "x";
-const secondCaracter = "o";
-const validate = (position, caracter) => cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter;
-const allPosicionsWin = () => {
-    return (validate(3, firstCaracter) && validate(4, firstCaracter) && validate(5, firstCaracter)) ||
-        validate(3, secondCaracter) && validate(4, secondCaracter) && validate(5, secondCaracter) ||
-        validate(0, firstCaracter) && validate(1, firstCaracter) && validate(2, firstCaracter) ||
-        validate(0, secondCaracter) && validate(1, secondCaracter) && validate(2, secondCaracter) ||
-        (validate(6, firstCaracter) && validate(7, firstCaracter) && validate(8, firstCaracter)) ||
-        validate(6, secondCaracter) && validate(7, secondCaracter) && validate(8, secondCaracter) ||
-        (validate(0, firstCaracter) && validate(3, firstCaracter) && validate(6, firstCaracter)) ||
-        validate(0, secondCaracter) && validate(3, secondCaracter) && validate(6, secondCaracter) ||
-        validate(1, firstCaracter) && validate(4, firstCaracter) && validate(7, firstCaracter) ||
-        validate(1, secondCaracter) && validate(4, secondCaracter) && validate(7, secondCaracter) ||
-        (validate(2, firstCaracter) && validate(5, firstCaracter) && validate(8, firstCaracter)) ||
-        validate(2, secondCaracter) && validate(5, secondCaracter) && validate(8, secondCaracter) ||
-        (validate(0, firstCaracter) && validate(4, firstCaracter) && validate(8, firstCaracter)) ||
-        validate(0, secondCaracter) && validate(4, secondCaracter) && validate(8, secondCaracter) ||
-        (validate(2, firstCaracter) && validate(4, firstCaracter) && validate(6, firstCaracter)) ||
-        validate(2, secondCaracter) && validate(4, secondCaracter) && validate(6, secondCaracter);
-};

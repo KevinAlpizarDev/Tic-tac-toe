@@ -4,17 +4,22 @@ let enjoyButton = document.getElementById("enjoy-button");
 let mystical = document.getElementById("mystical");
 let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 enjoyButton.addEventListener("click", function () {
-    const userName = {
-        characterName: characterName.value
-    };
-    nameData.push(userName);
-    console.log(nameData);
-    localStorage.setItem("nameData", JSON.stringify(nameData));
-    enjoy();
+    console.log(characterName.value);
+    if (characterName.value == "") {
+        return alert("Debes de poner tu nombre");
+    }
+    else {
+        const userName = {
+            characterName: characterName.value
+        };
+        nameData.push(userName);
+        console.log(nameData);
+        localStorage.setItem("nameData", JSON.stringify(nameData));
+        enjoy();
+    }
 });
 function enjoy() {
     location.href = "./src/pages/game.html";
     console.log("Clicks");
 }
-let id;
 const play = (id) => id.play();

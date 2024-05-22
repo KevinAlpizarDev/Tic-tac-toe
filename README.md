@@ -159,9 +159,121 @@ GAMEEEE
 
 https://www.onicode.com/efecto-neon-css/
 
-
-
 Amarillo Neon (#FFFF00): Un color clásico de los años 80 que resalta y llama la atención.
 Rosa Neon (#FF1493): Este ya lo tienes en tu código y es perfecto para ese toque vibrante y retro.
 Verde Neon (#39FF14): Otro color popular de los años 80 que se ve increíblemente vibrante.
 Azul Neon (#00FFFF): Un tono azul eléctrico que evoca la nostalgia de la época y complementa bien los otros colores.
+
+//////////////////////////////////////////////
+
+¡Claro! Aquí tienes una idea para un modo de juego con temática de Stranger Things, titulado "The Mind Flayer":
+
+Título del Modo de Juego: The Mind Flayer
+
+Descripción:
+Sumérgete en el oscuro y misterioso mundo de Hawkins, donde la oscuridad acecha en cada esquina y el peligro está siempre al acecho. En "The Mind Flayer", te enfrentarás a la más aterradora de las amenazas: el Mind Flayer. Este ser maligno de otra dimensión ha invadido la pequeña ciudad de Hawkins y está extendiendo su influencia, corrompiendo todo a su paso.
+
+Como valiente habitante de Hawkins, tu misión es detener al Mind Flayer antes de que sea demasiado tarde. Reúne a tu grupo de amigos y adéntrate en el Upside Down, un lugar lleno de criaturas aberrantes y peligros indescriptibles. Pero ten cuidado, el Mind Flayer no se detendrá ante nada para destruirte y cumplir su siniestro propósito.
+
+Enfréntate a desafiantes misiones, resuelve intrincados acertijos y lucha contra monstruosas criaturas mientras te abres paso hacia el núcleo del mal. Utiliza tus habilidades especiales y trabaja en equipo para derrotar al Mind Flayer y salvar a Hawkins de su terrible destino.
+
+¿Tienes lo necesario para enfrentarte a la oscuridad y triunfar sobre el Mind Flayer? Prepárate para una aventura épica llena de peligros, misterios y emociones en "The Mind Flayer".
+
+/////////////////////////////////////////////////////////////////////
+
+¡Claro! Aquí tienes una idea para un modo competitivo con estilo de los 80s:
+
+Título del Modo de Juego: Retro Rumble
+
+Descripción:
+¡Bienvenidos a Retro Rumble, donde los amigos se convierten en rivales en un enfrentamiento lleno de nostalgia y diversión al más puro estilo de los años 80! En este modo competitivo, podrás desafiar a tus amigos en emocionantes batallas inspiradas en los clásicos juegos de la década dorada del arcade.
+
+Selecciona tu personaje favorito entre una colorida variedad de héroes y villanos con estilos únicos y habilidades especiales. Desde valientes aventureros hasta malvados supervillanos, cada personaje ofrece una experiencia de juego diferente que te hará retroceder en el tiempo.
+
+Elige entre una variedad de escenarios inspirados en icónicos lugares de los años 80, como una pista de patinaje, una sala de arcade o un centro comercial. Cada escenario ofrece su propio conjunto de desafíos y trampas que deberás superar para alcanzar la victoria.
+
+Enfréntate a tus amigos en emocionantes partidas llenas de acción, donde la estrategia y la habilidad serán tus mejores aliados. Utiliza power-ups y objetos especiales para tomar la delantera y sorprender a tus oponentes.
+
+Con gráficos pixelados, música pegajosa y una jugabilidad adictiva, Retro Rumble te transportará de vuelta a una era donde los videojuegos eran simples, pero increíblemente divertidos. ¿Estás listo para revivir la magia de los años 80 y demostrar quién es el verdadero rey del arcade? ¡Prepárate para el desafío definitivo en Retro Rumble!
+
+
+
+
+
+
+
+////////////////////////////
+HUMAN MACHINE 
+
+.usher{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.div-container {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+  /* background-color: blue; */
+  /* background-color: rgb(0, 0, 0); */
+  background-image: url("/src/img/stranger-things-easter-eggs-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+  }
+  .cellButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 150px;
+    background-color: #204187;
+    opacity: 0.4;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+//////////////////////////
+
+
+.usher{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.game {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+  /* background-color: blue; */
+  width: 450px;
+  height: 450px;
+  padding: 10px;
+  }
+  .demoButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  
