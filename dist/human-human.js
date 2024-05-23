@@ -36,17 +36,33 @@ const allPosicionsWin = () => {
         (validate(2, firstCaracter) && validate(4, firstCaracter) && validate(6, firstCaracter)) ||
         validate(2, secondCaracter) && validate(4, secondCaracter) && validate(6, secondCaracter);
 };
-const audioPlayer = document.getElementById('play-button');
+const audioPlayer = document.getElementById('pasar');
 const playButton = document.getElementById('play-button');
 const pauseButton = document.getElementById('pause-button');
 const nextButton = document.getElementById('next-button');
-let counterIndexSong = 0;
-const bestFun = () => {
-    audioPlayer.src = '/src/sounds/music-' + counterIndexSong + ".mp3";
-    console.log(typeof audioPlayer.src);
-};
-audioPlayer.addEventListener("click", function () {
-    counterIndexSong < 3 ? counterIndexSong++ : counterIndexSong = 0;
-    bestFun();
+let counterIndexSong = 1;
+playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener("click", function () {
+    playSong();
 });
-const plays = (id) => id.play();
+pauseButton === null || pauseButton === void 0 ? void 0 : pauseButton.addEventListener("click", function () {
+    pauseSong();
+});
+nextButton === null || nextButton === void 0 ? void 0 : nextButton.addEventListener("click", function () {
+    nextSong();
+});
+const playSong = () => {
+    audioPlayer.src = `/src/sounds/music-${counterIndexSong}.mp3`;
+    console.log(audioPlayer);
+    audioPlayer.play();
+};
+const pauseSong = () => {
+    audioPlayer.src = `/src/sounds/music-${counterIndexSong}.mp3`;
+    console.log(audioPlayer);
+    audioPlayer.pause();
+};
+const nextSong = () => {
+    counterIndexSong++;
+    audioPlayer.src = `/src/sounds/music-${counterIndexSong}.mp3`;
+    console.log(audioPlayer);
+    audioPlayer.play();
+};

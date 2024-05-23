@@ -23,3 +23,8 @@ function enjoy() {
     console.log("Clicks");
 }
 const play = (id) => id.play();
+enjoyButton === null || enjoyButton === void 0 ? void 0 : enjoyButton.addEventListener("mouseover", function () {
+    mystical.src = "/src/sounds/mystical.mp3";
+    console.log(mystical);
+    mystical.play();
+});

@@ -1,6 +1,6 @@
 let characterName = (document.getElementById("character-name") as HTMLInputElement);
         let enjoyButton = document.getElementById("enjoy-button");
-        let mystical = document.getElementById("mystical");
+        let mystical = (document.getElementById("mystical") as HTMLMediaElement);
 
         let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 
@@ -39,4 +39,12 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 
 //FUNCION PLAY
 const play = ( id: HTMLMediaElement) => id.play()
-// const pause = ( id: HTMLMediaElement) => id.pause()
+
+
+enjoyButton?.addEventListener("mouseover", function () {
+
+    mystical.src="/src/sounds/mystical.mp3"
+    console.log(mystical)
+  mystical.play()
+})
+
