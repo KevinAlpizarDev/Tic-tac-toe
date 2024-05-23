@@ -7,16 +7,16 @@ cellbuttonn.forEach((button, index) => {
     button.addEventListener("click", () => {
         if (toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "x";
-            console.log(pulserCounter());
+            pulserCounter();
         }
         else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "") {
-            cellbuttonn[index].textContent = "o";
-            console.log(pulserCounter());
+            cellbuttonn[index].textContent = "O";
+            pulserCounter();
         }
     });
 });
-const firstCaracter = "x";
-const secondCaracter = "o";
+const firstCaracter = "X";
+const secondCaracter = "O";
 const validate = (position, caracter) => cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter;
 const allPosicionsWin = () => {
     return (validate(3, firstCaracter) && validate(4, firstCaracter) && validate(5, firstCaracter)) ||
@@ -61,7 +61,7 @@ const pauseSong = () => {
     audioPlayer.pause();
 };
 const nextSong = () => {
-    counterIndexSong++;
+    counterIndexSong < 3 ? counterIndexSong++ : counterIndexSong = 1;
     audioPlayer.src = `/src/sounds/music-${counterIndexSong}.mp3`;
     console.log(audioPlayer);
     audioPlayer.play();

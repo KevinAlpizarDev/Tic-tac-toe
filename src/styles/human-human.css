@@ -77,11 +77,11 @@ background-color: #5afe28; */
 }
 
 .reproductor-container{
-    padding: 5px;
-    width: 95%;
+    padding: 10px;
+    width: 65%;
     height: 15rem;
-    background-color: #ec822b;
-    border-radius: 5px;
+    background-color: #9a9993;
+    border-radius: 10px;
 }
 
 .reproductor-buttons{
@@ -90,17 +90,67 @@ background-color: #5afe28; */
     align-items: center;
     width: 100%;
     height: 30%;
-    background-color: blueviolet;
+    background-color: #9a9993;
 }
 .reproductor-border{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
-    width: 9rem;
-background-color: #472206;
-border: 1px solid yellow;
+    height: 4rem;
+    width: 20rem;
+background-color: #c7c7c4;
+border: 4px solid rgb(138, 71, 205);
+margin-bottom: 6px;
 
+}
+
+#play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #dc3545;
+width: 5rem;
+height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#play-button:hover{
+    background-color: #c62938;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 4px;
+    margin: 1px;
+    }
+#next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28a745;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#next-button:hover{
+    background-color: #1ea03c;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button{
+    background-color: #ffc107;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button:hover{
+    background-color: #e0ab0a;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
 }
 
 .reproductor-body{
@@ -117,7 +167,7 @@ border: 1px solid yellow;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: #9a9993;
 }
 
 .reproductor-parlante{
@@ -126,19 +176,22 @@ border: 1px solid yellow;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(37, 209, 91);
+    border: 4px solid black;
+    background-color: #9a9993;
 }
 
 .grabador{
     height: 8rem;
     width: 8rem;
-    background-color: #472206;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #e3e4e5 ;
     border-radius: 50%;
 }
 .circulo{
     height: 60%;
     width: 60%;
-    background-color: #472206;
+    background-color: #202522;
+    border: 4px solid rgb(0, 0, 0);
 }
 
 .third-section{

@@ -1,5 +1,4 @@
 const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 botones por medio de la clase
-// document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
 
 let counter = 0 //Valor inicial
 
@@ -9,29 +8,25 @@ cellbuttonn.forEach((button, index) => { //LOOP PARA TODOS LOS BOTONES  //Recorr
   button.addEventListener("click", () => { //Evento escucha por medio del parametro button
     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON  //True ejecuta la funcion dentro del if
       cellbuttonn[index].textContent = "x"; //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX // "X" al boton especifico
-//SE SUMA UNO AL CONTADOR|
-      // pulserCounter()
-      console.log( pulserCounter());
-
+pulserCounter()
     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
 //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
-      cellbuttonn[index].textContent = "o"
+      cellbuttonn[index].textContent = "O"
 //SE SUMA UNO AL CONTADOR
-    // pulserCounter()
-    console.log( pulserCounter());
+    pulserCounter()
     }
-//OPERADOR TERNARIO
-// allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
   })
 
 })
 //Valores vara los parametros necesarios en la nuevas funciones
-const firstCaracter = "x"
-const secondCaracter = "o"
+const firstCaracter = "X"
+const secondCaracter = "O"
 
 //Funtion llamada validate
 const validate = ( position: number, caracter: string ) =>
    cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter
+
+
 
 const allPosicionsWin = () =>{
   // PRIMERA FILA HORIZONTAL
@@ -106,43 +101,9 @@ const pauseSong = () => {
 }
 //FUNCION NEXT
 const nextSong = () => {
-counterIndexSong++
-  // counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
+ counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
   audioPlayer.src=`/src/sounds/music-${counterIndexSong}.mp3`
   console.log(audioPlayer)
   audioPlayer.play()
 }
-
-
-// // let counterIndexSong = 0
-// //EVENTO ESCUCHA NEXT
-// playButton!.addEventListener("click", function () {
-//   counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
-//   //  bestFun()
-//  })
-// //EVENTO ESCUCHA PAUSE
-// pauseButton!.addEventListener("click", function () {
-//   // counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
-//   //  bestFun()
-//   audioPlayer.src=`/src/sounds/music-${counterIndexSong}.mp3`
-//   // console.log(audioPlayer)
-//   audioPlayer.pause()
-//  })
-
-// //EVENTO PLAY FUN
-// nextButton!.addEventListener("click", function () {
-//  // counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
-//   //  bestFun()
-//  })
-
-
-
-
-//FUNCION REPRODUCCION
-// const bestFun = () => {
-//   audioPlayer.src=`/src/sounds/music-${counterIndexSong}.mp3`
-//   console.log(audioPlayer)
-//   audioPlayer.play()
-//   }
-
 
