@@ -39,4 +39,4 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 
 //FUNCION PLAY
 const play = ( id: HTMLMediaElement) => id.play()
-
+// const pause = ( id: HTMLMediaElement) => id.pause()

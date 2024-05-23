@@ -1,6 +1,5 @@
 "use strict";
 const cellbuttonn = document.querySelectorAll(".cellButton");
-document.getElementById("header").innerHTML = "INITIAL TEXT!";
 let counter = 0;
 const pulserCounter = () => counter++;
 const toggleFunction = (counter) => counter % 2 === 0;
@@ -14,7 +13,6 @@ cellbuttonn.forEach((button, index) => {
             cellbuttonn[index].textContent = "o";
             console.log(pulserCounter());
         }
-        allPosicionsWin() ? document.getElementById("header").innerHTML = "WINNER!" : document.getElementById("header").innerHTML = "NOTHING";
     });
 });
 const firstCaracter = "x";
@@ -38,3 +36,17 @@ const allPosicionsWin = () => {
         (validate(2, firstCaracter) && validate(4, firstCaracter) && validate(6, firstCaracter)) ||
         validate(2, secondCaracter) && validate(4, secondCaracter) && validate(6, secondCaracter);
 };
+const audioPlayer = document.getElementById('play-button');
+const playButton = document.getElementById('play-button');
+const pauseButton = document.getElementById('pause-button');
+const nextButton = document.getElementById('next-button');
+let counterIndexSong = 0;
+const bestFun = () => {
+    audioPlayer.src = '/src/sounds/music-' + counterIndexSong + ".mp3";
+    console.log(typeof audioPlayer.src);
+};
+audioPlayer.addEventListener("click", function () {
+    counterIndexSong < 3 ? counterIndexSong++ : counterIndexSong = 0;
+    bestFun();
+});
+const plays = (id) => id.play();

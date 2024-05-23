@@ -1,5 +1,5 @@
 const cellbuttonn = document.querySelectorAll(".cellButton") //Se toman los 9 botones por medio de la clase
-document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
+// document.getElementById("header")!.innerHTML = "INITIAL TEXT!" //Se toma el Id header y se le asigna un contenido
 
 let counter = 0 //Valor inicial
 
@@ -21,7 +21,7 @@ cellbuttonn.forEach((button, index) => { //LOOP PARA TODOS LOS BOTONES  //Recorr
     console.log( pulserCounter());
     }
 //OPERADOR TERNARIO 
-allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
+// allPosicionsWin() ? document.getElementById("header")!.innerHTML = "WINNER!" : document.getElementById("header")!.innerHTML = "NOTHING";
   })
 
 })
@@ -69,6 +69,39 @@ validate(2, secondCaracter ) && validate(4, secondCaracter) && validate(6, secon
 
 
 
+///////////////////////////LOGICA DE REPRODUCCION
+
+
+
+// const songs = ['music-1.mp3', 'music-2.mp3', 'music-3.mp3'];
+// let currentSongIndex = 0;
+
+const audioPlayer = (document.getElementById('play-button') as HTMLMediaElement);
+const playButton = document.getElementById('play-button');
+const pauseButton = document.getElementById('pause-button');
+const nextButton = document.getElementById('next-button');
+
+
+
+let counterIndexSong = 0
+const bestFun = () => {
+// counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 0 ;
+audioPlayer!.src = '/src/sounds/music-' + counterIndexSong + ".mp3";
+
+
+console.log(typeof audioPlayer!.src );
+
+}
+
+
+  audioPlayer!.addEventListener("click", function () {
+    
+   counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 0 ;
+
+    bestFun()
+  })
+
+  const plays = ( id: HTMLMediaElement, specificSong: string) => id.play()
 
 
 
@@ -76,43 +109,4 @@ validate(2, secondCaracter ) && validate(4, secondCaracter) && validate(6, secon
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// const cellButtons = document.querySelectorAll(".demoButtons")
-// document.getElementById("demo")!.innerHTML = "Playing"
-// //CONTADOR DE TURNOS 
-// let demoCounter = 0;
-// const demoPulser = () => demoCounter++
-// //Declaramos la variable para ver el largo del NodeList
-// const demoLength = cellButtons.length // 9
-// //FUNCNION RANDOM
-// const demoRandom = () => Math.floor(Math.random() * demoLength);
-// ///////////////////////Recibe el contador como parametro 
-// const demoPulse= (demoCounter:number) => demoCounter % 2 == 0
-// //////////////////////////////////////
-// cellButtons.forEach((button, index) => {
-//     button!.addEventListener("click", () => {
-//         cellButtons[index].innerHTML="x"
-//         if (cellButtons[index].textContent == "") { 
-//             console.log(1);
-//             cellButtons[index].innerHTML = "x"
-//             demoPulser()
-//         }
-//         else{
-//             setTimeout(() => {
-//                 cellButtons[demoRandom()].innerHTML = "o"
-//             }, 1000);
-//             demoPulser()
-//         }
-//     } )
-// });
 

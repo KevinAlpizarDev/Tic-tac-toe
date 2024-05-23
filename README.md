@@ -196,84 +196,133 @@ Enfréntate a tus amigos en emocionantes partidas llenas de acción, donde la es
 
 Con gráficos pixelados, música pegajosa y una jugabilidad adictiva, Retro Rumble te transportará de vuelta a una era donde los videojuegos eran simples, pero increíblemente divertidos. ¿Estás listo para revivir la magia de los años 80 y demostrar quién es el verdadero rey del arcade? ¡Prepárate para el desafío definitivo en Retro Rumble!
 
-
-
-
-
-
-
 ////////////////////////////
-HUMAN MACHINE 
+HUMAN MACHINE
 
 .usher{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 100%;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 .div-container {
-    display: grid;
+display: grid;
 
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-  /* background-color: blue; */
-  /* background-color: rgb(0, 0, 0); */
-  background-image: url("/src/img/stranger-things-easter-eggs-3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-    width: 450px;
-    height: 450px;
-    padding: 10px;
-  }
-  .cellButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 153px;
-    height: 150px;
-    background-color: #204187;
-    opacity: 0.4;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
 
+/_ background-color: blue; _/
+/_ background-color: rgb(0, 0, 0); _/
+background-image: url("/src/img/stranger-things-easter-eggs-3.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 450px;
+height: 450px;
+padding: 10px;
+}
+.cellButton{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 153px;
+height: 150px;
+background-color: #204187;
+opacity: 0.4;
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
 
 //////////////////////////
 
-
 .usher{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 100%;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 .game {
-    display: grid;
+display: grid;
 
     grid-template-columns: auto auto auto;
-  /* background-color: blue; */
-  width: 450px;
-  height: 450px;
-  padding: 10px;
-  }
-  .demoButtons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
 
-  
+/_ background-color: blue; _/
+width: 450px;
+height: 450px;
+padding: 10px;
+}
+.demoButtons{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 150px;
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+
+///////////////////////////////////////////////////////////
+
+      <div class="usher">
+
+<div class="radio container">
+    <div class="panasonic">
+        <h2>radio</h2>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+    </div>
+
+
+</div>
+
+<div>
+
+        <div  class="progress-bar">
+            <div>
+                <h2>PROGRESS BAR</h2>
+            </div>
+        </div>
+
+
+
+        <div class="div-container">
+
+            <div><button class="cellButton" id="matris0,0"></button></div>
+            <div><button class="cellButton" id="matris0,1"></button></div>
+            <div><button class="cellButton" id="matris0,2"></button></div>
+            <div><button class="cellButton" id="matris1,0"></button></div>
+            <div><button class="cellButton" id="matris1-1"></button></div>
+            <div><button class="cellButton" id="matris1-2"></button></div>
+            <div><button class="cellButton" id="matris2-0"></button></div>
+            <div><button class="cellButton" id="matris2-1"></button></div>
+            <div><button class="cellButton" id="matris2-2"></button></div>
+        </div>
+
+    </div>
+    </div>
+
+Press Start 2P: Esta es una fuente inspirada en los viejos juegos de 8 bits y tiene un aspecto auténticamente pixelado que evoca la nostalgia de los juegos retro.
+
+VT323: Aunque esta fuente no es estrictamente pixelada, tiene un aspecto de terminal de computadora antigua que puede complementar bien el estilo retro de tu juego.
+
+Orbitron: Esta fuente tiene un diseño geométrico que recuerda a las pantallas de HUD de los juegos arcade y puede darle un toque futurista retro a tu juego.
+
+Pixelated: Como su nombre indica, esta fuente está diseñada específicamente para parecer pixelada, lo que la hace perfecta para proyectos que buscan un aspecto retro de píxeles.
+
+VT323: Esta fuente imita el estilo de una terminal de computadora antigua, lo que la hace ideal para juegos retro con una estética de los años 80.
+
+Nova Mono: Aunque no es puramente pixelada, tiene un diseño limpio y geométrico que puede adaptarse bien a la estética retro de tu juego.
+
+Share Tech Mono: Esta fuente tiene un aspecto técnico y pixelado que podría encajar bien en un juego con temática de ciencia ficción de los años 80.

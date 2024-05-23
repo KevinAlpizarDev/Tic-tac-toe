@@ -1,5 +1,31 @@
+
 *{
     margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+   
+    font-size: 16px;  /* 1rem = 10px */
+}
+
+
+
+:root {
+    /* OM PROPERTIES */
+    --amarillo: #fed428;
+    --café: #472206;
+    --blanco: #ffffff;
+    --negro: #000000;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 body{
@@ -7,8 +33,121 @@ body{
     background-image: url("/src/img/80s-retro-arcade-dngmbcm5cgd75gqw.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: red;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+    height: 55rem;
+    /* background-color: aqua; */
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+width: 25%;
+height: 100%;
+/* 
+background-color: #5afe28; */
+
+}
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(32, 43, 43); */
+}
+
+.reproductor-container{
+    padding: 5px;
+    width: 95%;
+    height: 15rem;
+    background-color: #ec822b;
+    border-radius: 5px;
+}
+
+.reproductor-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: blueviolet;
+}
+.reproductor-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 9rem;
+background-color: #472206;
+border: 1px solid yellow;
+
+}
+
+.reproductor-body{
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+    background-color: rgb(233, 168, 82);
+}
+
+.reprodutor-grabador{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.reproductor-parlante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 209, 91);
+}
+
+.grabador{
+    height: 8rem;
+    width: 8rem;
+    background-color: #472206;
+    border-radius: 50%;
+}
+.circulo{
+    height: 60%;
+    width: 60%;
+    background-color: #472206;
+}
+
+.third-section{
+width: 25%;
+height: 100%;
+/* background-color: #f9410e; */
+
+
+}
 
 .usher{
     width: 100%;
@@ -16,6 +155,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
+
+
+}
+
+.panasonic{
+height: 100px;
+width: 300px;
+background-color: aquamarine;
+
+}
+
+.progress-bar{
+height: 30px;
+width: 100%;
+background-color: aqua;
 
 
 }
@@ -42,6 +197,9 @@ body{
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 
 
   }

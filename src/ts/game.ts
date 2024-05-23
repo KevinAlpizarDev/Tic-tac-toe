@@ -4,7 +4,7 @@
 // BOTONES A LOS CUALES REACCIONAR
 let mode1 = document.getElementById("mode-1")
 let mode2 = document.getElementById("mode-2")
- 
+ //FUNCION CON LAS REGLAS CSS
 const backgrounChanger = (urlImg: string) => {
   document.getElementById("main")!.style.transition = "ease-in-out 1s"
   document.getElementById("main")!.style.backgroundImage = urlImg;
@@ -15,17 +15,11 @@ const backgroundFunction = (wichBoton:  HTMLElement | null, typeMouseEvent: stri
     backgrounChanger(OverOrOutImg);
   });
 }
-
-//FUNCION REDIRECCION
-const redirectFuntion = (where: string) => location.href = where;
-
-
-
-
-// Cambio visual del background con mouseover de los botones
+//CAMBIO VISUAL DEL BACKGROUND CON MOUSEOVER DE LOS BOTONES 
 backgroundFunction(mode1,"mouseover", "url('../img/Play-Arcade.png" )
 backgroundFunction(mode2,"mouseover", "url('../img/The-Mind-Flayer..png")
-
-// Cambio visual del background con mouseover de los botones
+//CAMBIO VISUAL DEL BACKGROUND CON MOUSEOVER DE LOA BOTONES
 backgroundFunction(mode1,"mouseout", "url('../img/mv.jpg" )
 backgroundFunction(mode2,"mouseout", "url('../img/mv.jpg")
+//FUNCION REDIRECCION
+const redirectFuntion = (where: string) => location.href = where;

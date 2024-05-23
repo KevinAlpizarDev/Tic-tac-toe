@@ -11,8 +11,8 @@ const backgroundFunction = (wichBoton, typeMouseEvent, OverOrOutImg) => {
         backgrounChanger(OverOrOutImg);
     });
 };
-const redirectFuntion = (where) => location.href = where;
 backgroundFunction(mode1, "mouseover", "url('../img/Play-Arcade.png");
 backgroundFunction(mode2, "mouseover", "url('../img/The-Mind-Flayer..png");
 backgroundFunction(mode1, "mouseout", "url('../img/mv.jpg");
 backgroundFunction(mode2, "mouseout", "url('../img/mv.jpg");
+const redirectFuntion = (where) => location.href = where;
