@@ -1,5 +1,4 @@
-
-///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 const cellButtons = document.querySelectorAll(".demoButtons")
 document.getElementById("demo")!.innerHTML = "Playing"
 //CONTADOR DE TURNOS 
@@ -20,7 +19,6 @@ cellButtons.forEach((button, index) => {
             demoPulser()
     } )
 });
-
 //CREAMOS LA LOGICA PARA VALIDAR ESPACIOS Y NO CAER ENCIMA
 const validateFunction = () => {
 let spaces: number[] = []
@@ -31,8 +29,9 @@ for (let i = 0; i < cellButtons.length; i++) {
     } 
     if (spaces.length > 0) {
         let secondIndex = Math.floor(Math.random() * spaces.length  )
-        console.log(secondIndex)
         cellButtons[i].innerHTML="o"
         return spaces[secondIndex];
     }
 }} 
+
+

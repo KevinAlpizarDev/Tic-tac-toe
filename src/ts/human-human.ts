@@ -7,7 +7,7 @@ const toggleFunction = (counter: number) =>  counter % 2 === 0 //SEGUNDA FUNCION
 cellbuttonn.forEach((button, index) => { //LOOP PARA TODOS LOS BOTONES  //Recorro el boton especifico por su index
   button.addEventListener("click", () => { //Evento escucha por medio del parametro button
     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON  //True ejecuta la funcion dentro del if
-      cellbuttonn[index].textContent = "x"; //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX // "X" al boton especifico
+      cellbuttonn[index].textContent = "X"; //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX // "X" al boton especifico
 pulserCounter()
     } else if (!toggleFunction(counter) && cellbuttonn[index].textContent == "" ){
 //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX
@@ -16,17 +16,13 @@ pulserCounter()
     pulserCounter()
     }
   })
-
 })
 //Valores vara los parametros necesarios en la nuevas funciones
 const firstCaracter = "X"
 const secondCaracter = "O"
-
 //Funtion llamada validate
 const validate = ( position: number, caracter: string ) =>
    cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter && cellbuttonn[position].textContent == caracter
-
-
 
 const allPosicionsWin = () =>{
   // PRIMERA FILA HORIZONTAL
@@ -53,7 +49,6 @@ validate(0, secondCaracter ) && validate(4, secondCaracter) && validate(8, secon
 //   //FILA DIAGONAL 2
 (validate(2, firstCaracter ) && validate(4, firstCaracter) && validate(6, firstCaracter )) || //con "X"
 validate(2, secondCaracter ) && validate(4, secondCaracter) && validate(6, secondCaracter) //CON "O"
-
 }
 
 //////////////////DOBLE FOR//////////////////////////////////////////////////////////////////////////////////
