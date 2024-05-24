@@ -5,6 +5,8 @@ const textoh1 = document.createTextNode("WELCOME!"); // Seleccionar elemento pad
 // CREA EL ElEMENTO 
 elementoPadre!.appendChild(nombreUsuario); // Resultado = "Kevin"
 nombreUsuario.appendChild(textoh1);
+//COLOR DEL TEXTO 
+
 // CONTADOR DE TURNO
 let counter = 0 //Valor inicial
  const pulserCounter = () => counter ++  //PRIMERA FUNCION //Variable de ingremento
