@@ -13,6 +13,7 @@ elementoPadre!.appendChild(nombreUsuario);
 
 
 
+
 let counter = 0 //Valor inicial
 
  const pulserCounter = () => counter ++  //PRIMERA FUNCION //Variable de ingremento
@@ -22,7 +23,7 @@ cellbuttonn.forEach((button, index) => { //LOOP PARA TODOS LOS BOTONES  //Recorr
     if (toggleFunction(counter) && cellbuttonn[index].textContent == "") { //CONDICIONALES PARA CAMBIAR EL TEXTO DEL BOTON  //True ejecuta la funcion dentro del if
       cellbuttonn[index].textContent = "X"; //CAMBIA EL TEXTCONTENT POR MEDIO DE SU INDEX // "X" al boton especifico
 pulserCounter()
-allXPosicionsWin() ?   nombreUsuario.appendChild(textoh1).textContent =  "Winner 'X' 🏆  and lost 'O' 💥!" :   nombreUsuario.appendChild(textoh1)
+allXPosicionsWin() ?   nombreUsuario.appendChild(textoh1).textContent =  "Winner 'X' 🏆  and lost 'O' 💥!" :   nombreUsuario.appendChild(textoh1) 
 
    nombreUsuario.appendChild(textoh1)
     } 
@@ -142,7 +143,7 @@ const pauseSong = () => {
 }
 //FUNCION NEXT
 const nextSong = () => {
- counterIndexSong < 3 ? counterIndexSong++:  counterIndexSong = 1 ;
+ counterIndexSong < 4 ? counterIndexSong++:  counterIndexSong = 1 ;
   audioPlayer.src=`/src/sounds/music-${counterIndexSong}.mp3`
   console.log(audioPlayer)
   audioPlayer.play()

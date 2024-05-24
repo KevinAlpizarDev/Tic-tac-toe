@@ -62,3 +62,32 @@ const nombreUsuario2 = document.createElement("h2");
 const textoh12 = document.createTextNode("Good lock!");
 elementoPadre2.appendChild(nombreUsuario2);
 nombreUsuario2.appendChild(textoh12);
+const audioPlayer2 = document.getElementById('pasa2');
+const playButton2 = document.getElementById('play-button2');
+const pauseButton2 = document.getElementById('pause-button2');
+const nextButton2 = document.getElementById('next-button2');
+let counterIndexSong2 = 1;
+playButton2 === null || playButton2 === void 0 ? void 0 : playButton2.addEventListener("click", function () {
+    playSong2();
+});
+pauseButton2 === null || pauseButton2 === void 0 ? void 0 : pauseButton2.addEventListener("click", function () {
+    pauseSong2();
+});
+nextButton2 === null || nextButton2 === void 0 ? void 0 : nextButton2.addEventListener("click", function () {
+    nextSong2();
+});
+const playSong2 = () => {
+    audioPlayer2.src = `/src/sounds/soundTrack-${counterIndexSong2}.mp3`;
+    audioPlayer2.play();
+};
+const pauseSong2 = () => {
+    audioPlayer2.src = `/src/sounds/soundTrack-${counterIndexSong2}.mp3`;
+    audioPlayer2.pause();
+};
+const nextSong2 = () => {
+    counterIndexSong2 < 4 ? counterIndexSong2++ : counterIndexSong2 = 1;
+    audioPlayer2.src = `/src/sounds/soundTrack-${counterIndexSong2}.mp3`;
+    audioPlayer2.play();
+};
+const resetButton3 = document.getElementById('reset-button');
+const exitButton3 = document.getElementById('exit-button');

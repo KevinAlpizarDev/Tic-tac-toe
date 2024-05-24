@@ -71,7 +71,7 @@ const pauseSong = () => {
     audioPlayer.pause();
 };
 const nextSong = () => {
-    counterIndexSong < 3 ? counterIndexSong++ : counterIndexSong = 1;
+    counterIndexSong < 4 ? counterIndexSong++ : counterIndexSong = 1;
     audioPlayer.src = `/src/sounds/music-${counterIndexSong}.mp3`;
     console.log(audioPlayer);
     audioPlayer.play();

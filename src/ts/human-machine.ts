@@ -104,3 +104,72 @@ const textoh12 = document.createTextNode("Good lock!"); // Seleccionar elemento 
 // Resultado = "Kevin"
 elementoPadre2!.appendChild(nombreUsuario2);
   nombreUsuario2.appendChild(textoh12);
+
+
+
+
+  /////////////////////////////////////////////////////CODIGO DE REPRODUCCION
+
+
+  const audioPlayer2 = (document.getElementById('pasa2') as HTMLMediaElement);
+const playButton2 = document.getElementById('play-button2');
+const pauseButton2 = document.getElementById('pause-button2');
+const nextButton2 = document.getElementById('next-button2');
+
+
+let counterIndexSong2 = 1
+
+//EVENTOS DE ESCUCHA DE LOS RADIO BOTONES
+
+//ESCUCHA CLICK DEL BOTON PLAY
+playButton2?.addEventListener("click", function () {
+  playSong2()
+})
+//ESCUCHA CLICK DEL BOTON PAUSE
+pauseButton2?.addEventListener("click", function () {
+  pauseSong2()
+})
+//ESCUCHA CLICK DEL BOTON NEXT
+nextButton2?.addEventListener("click", function () {
+  nextSong2()
+})
+//FUNCIONES RADIO ACTIONS 
+
+//FUNCION PLAY
+
+const playSong2 = () => {
+  audioPlayer2.src=`/src/sounds/soundTrack-${counterIndexSong2}.mp3`
+
+  audioPlayer2.play()
+}
+//FUNCION PAUSE
+const pauseSong2 = () => {
+  audioPlayer2.src=`/src/sounds/soundTrack-${counterIndexSong2}.mp3`
+  
+  audioPlayer2.pause()
+}
+//FUNCION NEXT
+const nextSong2 = () => {
+ counterIndexSong2 < 4 ? counterIndexSong2++:  counterIndexSong2 = 1 ;
+  audioPlayer2.src=`/src/sounds/soundTrack-${counterIndexSong2}.mp3`
+
+  audioPlayer2.play()
+}
+
+const resetButton3 = document.getElementById('reset-button');
+const exitButton3= document.getElementById('exit-button');
+
+
+
+//BOTON RESET GAME 
+// resetButton3?.addEventListener("click", function () {
+//   location.reload();
+// })
+
+
+// exitButton3?.addEventListener("click", function () {
+//   location.href = "/src/pages/game.html";
+// })
+
+// C:\Users\Dell\Desktop\Tic-tac-toe\src\ts\game.ts
+// C:\Users\Dell\Desktop\Tic-tac-toe\src\pages\human-human.html
