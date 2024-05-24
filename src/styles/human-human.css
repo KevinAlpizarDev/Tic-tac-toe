@@ -195,13 +195,45 @@ margin: 1px;
 }
 
 .third-section{
+
 width: 25%;
 height: 100%;
-/* background-color: #f9410e; */
+background-color: #f9410e;
 
 
 }
 
+.first-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: green;
+}
+
+.reset-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c62938;
+}
+.second-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(128, 124, 0);
+}
+
+.exit-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
+}
 .usher{
     width: 100%;
     height: 500px;
@@ -245,7 +277,8 @@ background-color: aqua;
     align-items: center;
     width: 150px;
     height: 150px;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+      background-color: rgba(209, 117, 195, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -253,6 +286,9 @@ background-color: aqua;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+/* color: white; */
 
-
+  }
+  .cellButton:hover{
+    background-color: rgba(255, 183, 244, 0.8);
   }
