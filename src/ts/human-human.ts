@@ -100,9 +100,7 @@ pauseButton?.addEventListener("click", function () {
 nextButton?.addEventListener("click", function () {
   nextSong()
 })
-
 //FUNCIONES RADIO ACTIONS 
-
 //FUNCION PLAY
 const playSong = () => {
   audioPlayer.src=`/src/sounds/music-${counterIndexSong}.mp3`
@@ -122,7 +120,6 @@ const nextSong = () => {
   console.log(audioPlayer)
   audioPlayer.play()
 }
-
 // BOTONES DE OPCIONES
 const resetButton = document.getElementById('reset-button');
 const exitButton = document.getElementById('exit-button');

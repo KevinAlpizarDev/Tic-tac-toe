@@ -14,12 +14,11 @@ const demoPulse= (demoCounter:number) => demoCounter % 2 == 0
 cellButtons.forEach((button, index) => {
     button!.addEventListener("click", () => {
         cellButtons[index].innerHTML="X"
-      
         setTimeout(() => {
             validateFunction()
         }, 1000); // Ajusta el tiempo de retraso según sea necesario
             demoPulser()
-            allXPosicionsWin2() ?     nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS VIVO" :  nombreUsuario2.appendChild(textoh12)   ;
+            allXPosicionsWin2() ?     nombreUsuario2.appendChild(textoh12).textContent = "You Are safe" :  nombreUsuario2.appendChild(textoh12)   ;
     } )
 });
 //CREAMOS LA LOGICA PARA VALIDAR ESPACIOS Y NO CAER ENCIMA
@@ -31,16 +30,13 @@ for (let i = 0; i < cellButtons.length; i++) {
         spaces.push(i)
     } 
     if (spaces.length > 0) {
-
-        
         let secondIndex = Math.floor(Math.random() * spaces.length  )
         cellButtons[i].innerHTML="O"
-        allOPosicionsWin2() ?   nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS muerto" :  nombreUsuario2.appendChild(textoh12)   ;
+        allOPosicionsWin2() ?   nombreUsuario2.appendChild(textoh12).textContent = "You Died" :  nombreUsuario2.appendChild(textoh12)   ;
         return spaces[secondIndex];
     }
 }} 
 //VALIDACIONES DE GANES 
-
 //Valores vara los parametros necesarios en la nuevas funciones
 const firstCaracter2 = "X"
 const secondCaracter2 = "O"
@@ -81,7 +77,6 @@ const allOPosicionsWin2 = () =>{
 //   //FILA DIAGONAL 1
 validate2(0, secondCaracter2 ) && validate2(4, secondCaracter2) && validate2(8, secondCaracter2) ||//CON "O"
 //   //FILA DIAGONAL 2
-
 validate2(2, secondCaracter2 ) && validate2(4, secondCaracter2) && validate2(6, secondCaracter2) //CON "O"
 }
 
@@ -153,6 +148,5 @@ const nextSong2 = () => {
 
   audioPlayer2.play()
 }
-
 const resetButton3 = document.getElementById('reset-button');
 const exitButton3= document.getElementById('exit-button');

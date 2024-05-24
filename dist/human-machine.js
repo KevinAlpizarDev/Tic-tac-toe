@@ -12,7 +12,7 @@ cellButtons.forEach((button, index) => {
             validateFunction();
         }, 1000);
         demoPulser();
-        allXPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS VIVO" : nombreUsuario2.appendChild(textoh12);
+        allXPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "You Are safe" : nombreUsuario2.appendChild(textoh12);
     });
 });
 const validateFunction = () => {
@@ -24,7 +24,7 @@ const validateFunction = () => {
         if (spaces.length > 0) {
             let secondIndex = Math.floor(Math.random() * spaces.length);
             cellButtons[i].innerHTML = "O";
-            allOPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS muerto" : nombreUsuario2.appendChild(textoh12);
+            allOPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "You Died" : nombreUsuario2.appendChild(textoh12);
             return spaces[secondIndex];
         }
     }
