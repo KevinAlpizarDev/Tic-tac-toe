@@ -1,5 +1,31 @@
+
 *{
     margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+   
+    font-size: 16px;  /* 1rem = 10px */
+}
+
+
+
+:root {
+    /* OM PROPERTIES */
+    --amarillo: #fed428;
+    --café: #472206;
+    --blanco: #ffffff;
+    --negro: #000000;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 body{
@@ -7,8 +33,266 @@ body{
     background-image: url("/src/img/80s-retro-arcade-dngmbcm5cgd75gqw.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: yellow;
+    /* background-color: red; */
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+    height: 55rem;
+    /* background-color: aqua; */
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+width: 25%;
+height: 100%;
+/* 
+background-color: #5afe28; */
+
+}
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(32, 43, 43); */
+}
+
+.reproductor-container{
+    padding: 10px;
+    width: 65%;
+    height: 15rem;
+    background-color: #9a9993;
+    border-radius: 10px;
+}
+
+.reproductor-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #9a9993;
+}
+.reproductor-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 20rem;
+background-color: #c7c7c4;
+border: 4px solid rgb(138, 71, 205);
+margin-bottom: 6px;
+
+}
+
+#play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #dc3545;
+width: 5rem;
+height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#play-button:hover{
+    background-color: #c62938;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 4px;
+    margin: 1px;
+    }
+#next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28a745;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#next-button:hover{
+    background-color: #1ea03c;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button{
+    background-color: #ffc107;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button:hover{
+    background-color: #e0ab0a;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+
+.reproductor-body{
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+    background-color: rgb(233, 168, 82);
+}
+
+.reprodutor-grabador{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #9a9993;
+}
+
+.reproductor-parlante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+    background-color: #9a9993;
+}
+
+.grabador{
+    height: 8rem;
+    width: 8rem;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #e3e4e5 ;
+    border-radius: 50%;
+}
+.circulo{
+    height: 60%;
+    width: 60%;
+    background-color: #202522;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.third-section{
+
+width: 25%;
+height: 100%;
+/* background-color: #f9410e; */
+
+
+}
+
+.first-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+
+.reset-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #c62938; */
+}
+
+#reset-button{
+    /* background-color: #26d98f; */
+    background-color: transparent;
+    box-shadow: 0 0 7px 1px #0CFFF4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+
+ 
+}
+#reset-button:hover{
+    /* background-color: #26d98f; */
+    background-color: transparent;
+    box-shadow: 0 0 10px 10px #0CFFF4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+
+ 
+}
+
+.second-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(128, 124, 0); */
+}
+
+.exit-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    
+  
+
+
+}
+#exit-button{
+    box-shadow: 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493;
+background-color: transparent;
+border: #FF1493;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+color: white;
+font-size: 20px;
+margin: 10px;
+
+}
+
+
+#exit-button:hover{
+    box-shadow: 0 0 10px 8px #FF1493, 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493;
+/* background-color: transparent;
+border: #FF1493;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+color: white;
+font-size: 20px;
+margin: 10px; */
+
+}
 
 .usher{
     width: 100%;
@@ -16,9 +300,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
+
 
 }
-.game {
+
+.panasonic{
+height: 100px;
+width: 300px;
+background-color: aquamarine;
+
+}
+
+.progress-bar{
+height: 30px;
+width: 100%;
+background-color: aqua;
+
+
+}
+.div-container {
     display: grid;
 
     grid-template-columns: auto auto auto;
@@ -26,16 +327,33 @@ body{
   width: 450px;
   height: 450px;
   padding: 10px;
+
+
+
   }
-  .demoButtons{
+  .cellButton{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 150px;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+      background-color: rgba(209, 117, 195, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(66, 64, 64);
+/* color: white; */
+
   }
+  .cellButton:hover{
+    background-color: rgba(255, 183, 244, 0.8);
+  }
+
+
+  /* ESTIOS 80´S  */
+  

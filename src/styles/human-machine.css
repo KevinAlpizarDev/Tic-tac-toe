@@ -1,14 +1,30 @@
+
 *{
     margin: 0;
 }
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+   
+    font-size: 16px;  /* 1rem = 10px */
+}
+
+
 
 body{
     background-color: blue;
     background-image: url("/src/img/dbsenye-f8ded3ef-979c-402f-8dae-07b34738bd94.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+        /* FUENTE DE GOOGLE */
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal; 
+        font-family: 'Stranger Things', sans-serif; 
 }
-
 
 .usher{
     width: 100%;
@@ -17,75 +33,292 @@ body{
     justify-content: center;
     align-items: center;
 
-}
-.div-container {
-    display: grid;
-
-    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
     justify-content: center;
     align-items: center;
-  /* background-color: blue; */
-  /* background-color: rgb(0, 0, 0); */
-  background-image: url("/src/img/stranger-things-easter-eggs-3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-    width: 450px;
-    height: 450px;
+
+}
+header{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    color: red;
+    font-size: 30px;
+
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55rem;
+  
+
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+width: 25%;
+height: 100%;
+
+
+
+}
+
+
+
+.reproductor-container{
     padding: 10px;
+    width: 65%;
+    height: 15rem;
+    background-color: #9a9993;
+    border-radius: 10px;
+}
+
+.reproductor-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #9a9993;
+}
+.reproductor-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 20rem;
+background-color: #c7c7c4;
+border: 4px solid rgb(138, 71, 205);
+margin-bottom: 6px;
+
+}
+
+#play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #dc3545;
+width: 5rem;
+height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#play-button:hover{
+    background-color: #c62938;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 4px;
+    margin: 1px;
+    }
+#next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28a745;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#next-button:hover{
+    background-color: #1ea03c;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button{
+    background-color: #ffc107;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+#pause-button:hover{
+    background-color: #e0ab0a;
+    width: 5rem;
+    height: 3rem;
+border-radius: 4px;
+margin: 1px;
+}
+
+.reproductor-body{
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+    background-color: rgb(233, 168, 82);
+}
+
+.reprodutor-grabador{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #9a9993;
+}
+
+.reproductor-parlante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+    background-color: #9a9993;
+}
+
+.grabador{
+    height: 8rem;
+    width: 8rem;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #e3e4e5 ;
+    border-radius: 50%;
+}
+.circulo{
+    height: 60%;
+    width: 60%;
+    background-color: #202522;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+ 
+}
+
+
+.third-section{
+
+    width: 25%;
+    height: 100%;
+
+    
+    
+    }
+
+    .first-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+   
+    }
+    
+.first-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+
+.reset-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #c62938; */
+}
+
+#reset-button{
+    height: 35px;
+    color: white;
+    font-size: 10px;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 8px;
+} 
+.second-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(128, 124, 0); */
+}
+
+.exit-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+
+}
+#exit-button{
+    height: 35px;
+    color: white;
+    font-size: 10px;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 8px;
+}
+.game {
+    display: grid;
+justify-content: center;
+align-items: center;
+    grid-template-columns: auto auto auto;
+  /* background-color: #1f3679; */
+  width: 450px;
+  height: 450px;
+  padding: 10px;
+
+  
   }
-  .cellButton{
+
+
+  .demoButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    /* border: 1px solid rgba(208, 163, 163, 0.8); */
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 153px;
     height: 150px;
-    background-color: #204187;
-    opacity: 0.4;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+
+    border: 1px solid  #1f3679 ;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    color: rgb(255, 255, 255);
+          /* FUENTE DE GOOGLE */
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-style: normal; 
+          font-family: 'Stranger Things', sans-serif; 
   }
 
-
-
-
-
-
-
-
-
-
 /* 
-body{
-    background-color: brown;
-}
-
-.div-container{
-    display: grid;
-    width: 50%;
-    height: 500px;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
- 
-}
-
-.cellButton{
-<<<<<<< HEAD
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-   width: 100%;
-   height: 100%;
-    font-size: 30px;
-    text-align: center;
-}
-=======
-    margin: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 400px;
-
-} */
->>>>>>> development
+  ESTILOS DARKNESS */

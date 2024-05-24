@@ -1,23 +1,31 @@
 let characterName = (document.getElementById("character-name") as HTMLInputElement);
         let enjoyButton = document.getElementById("enjoy-button");
-        let mystical = document.getElementById("mystical");
+        let mystical = (document.getElementById("mystical") as HTMLMediaElement);
 
         let nameData = JSON.parse(localStorage.getItem("nameData") || '[]');
 
         enjoyButton!.addEventListener("click", function () {
-            const userName = {
-                characterName: characterName!.value
+            console.log(characterName!.value)
+            if (characterName!.value == "") {
+                return alert("Debes de poner tu nombre")
+            }else{
+                const userName = {
+                    characterName: characterName!.value
+                }
+                nameData.push(userName);
+                console.log(nameData);
+    
+                localStorage.setItem("nameData", JSON.stringify(nameData));
+                enjoy()
             }
 
-            nameData.push(userName);
-            console.log(nameData);
 
-            localStorage.setItem("nameData", JSON.stringify(nameData));
+           
 
             
             // characterName.textContent !== "" ?  enjoy() : console.log(3);
             
-           enjoy()
+           
             // playFuntion(mystical);
         });
 
@@ -29,7 +37,14 @@ let characterName = (document.getElementById("character-name") as HTMLInputEleme
 
 
 
-//////////////PLay funtion
-let id
-const play = ( id:  HTMLMediaElement) => id.play()
+//FUNCION PLAY
+const play = ( id: HTMLMediaElement) => id.play()
+
+
+enjoyButton?.addEventListener("mouseover", function () {
+
+    mystical.src="/src/sounds/mystical.mp3"
+    // console.log(mystical)
+  mystical.play()
+})
 

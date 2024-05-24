@@ -80,7 +80,7 @@ margin: 5px;
         }
         
 #main {
-  height: 580px;
+  height:  580px;
   width: 100%;
 
   background-size: cover;
@@ -94,7 +94,7 @@ margin: 5px;
 }
 
 .contenido p {
-  color: aliceblue;
+  color: rgb(114, 171, 221);
 }
 /* 
 footer {
@@ -106,7 +106,26 @@ footer {
 
 
 footer{
+  display: flex;
+  justify-content: end;
+  align-items: center;
   background-color: black;
   height: 52px;
   color: white;
+}
+
+.copy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 100%;
+width: 20%;
+background-color: #ee5c30;
+
+}
+
+footer h2 {
+font-size: 10px;
+  margin-right: 20px;
+
 }

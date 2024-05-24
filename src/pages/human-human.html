@@ -4,41 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- FUENTE PRESS START 2P GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- FUENTE POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Asap:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS ESTYLE -->
     <link rel="stylesheet" href="/src/styles/human-human.css">
+    <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <div>
+            <div>
+                <!-- <h2> PROGRESS BAR</h2> -->
+                <!-- <div class="w3-border">
+                    <div class="w3-grey" style="height:24px;width:20%"></div>
+                </div> -->
+                <h1>🕹️ UNLIMITED GAMES 💥</h1>
+              
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!-- REPRODUCTOR DE MUSICA -->
+        <div class="first-section">
+            <div class="reproductor-container">
+                <div class="reproductor-buttons">
+                    <div class="reproductor-border">
+
+                        <button id="play-button">
+                            <img src="/src/img/play.svg" alt="">
+                        </button>
+                        <button id="next-button">
+                            <img src="/src/img/next.svg" alt="">
+                        </button>
+                        <button id="pause-button">
+                            <img src="/src/img/pause.svg" alt="">
+                        </button>
+
+                        <audio id="pasar"></audio>
+
+                    </div>
 
 
-    <h1 id="demo">Demo</h1>
+                </div>
+                <div class="reproductor-body">
 
- 
-    <div class="usher">
+                    <div class="reproductor-parlante">
+                        <div class="circulo">
+
+                        </div>
+
+                    </div>
+                    <div class="reprodutor-grabador">
+                        <div class="grabador">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+
+
+            <div class="div-container">
+
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+                <div><button class="cellButton"></button></div>
+            </div>
 
 
 
 
+        </div>
+        <div class="third-section">
+            <div class="first-block">
+                <div>
+                    <div class="nombre"></div>
+                    <div class="reset-button-container">
+
+                        <button id="reset-button">RESET GAME</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="second-block">
+                <div>
+                    <h3>primerboton</h3>
+                    <div class="exit-button-container">
+
+                        <button id="exit-button">EXIT</button>
+
+
+                        <!-- 
+                    <div class="container">
+                        <h1 class="neonText">
+                              40% off
+                        </h1>
+                        <h2 class="neonText">Now through Aug. 1</h2> 
+                    
+                     </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
-
-
-    <div class="game">
-        <!-- class="cellButton" -->
-        <div><button class="demoButtons" id="matris0,0"></button></div>
-        <div><button class="demoButtons" id="matris0,1"></button></div>
-        <div><button class="demoButtons" id="matris0,2"></button></div>
-        <div><button class="demoButtons" id="matris1,0"></button></div>
-        <div><button class="demoButtons" id="matris1-1"></button></div>
-        <div><button class="demoButtons" id="matris1-2"></button></div>
-        <div><button class="demoButtons" id="matris2-0"></button></div>
-        <div><button class="demoButtons" id="matris2-1"></button></div>
-        <div><button class="demoButtons" id="matris2-2"></button></div>
-    </div>
-</div>
-            
-</div>
 
     <script src="/dist/human-human.js"></script>
 

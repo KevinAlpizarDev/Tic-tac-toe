@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
 
     <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,32 +12,35 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="/src/styles/game.css">
-    <title>Document</title>
-  
+    <title>Start a Game</title>
+
 </head>
 
 <body>
-   
+
     <div id="main">
         <div class="buttons-container">
-    <div class="container">
-        <a href="/src/pages/human-human.html"> <button id="mode-1">Competitive Mode</button></a>
-        
-        <a href="/src/pages/human-machine.html"> <button id="mode-2">Demo mode</button></a>
-    
-    
-    </div>    
+            <div class="container">
+                <button onclick="redirectFuntion('./human-human.html')" id="mode-1">Competitive Mode</button>
 
-</div>
-        
+                <button onclick="redirectFuntion('./human-machine.html')" id="mode-2">Demo mode</button>
 
-</div>
-  
+
+            </div>
+
+        </div>
+
+
+    </div>
+
 
 
     <footer>
-
-        <h2>FOOTER HERE</h2>
+<div class="copy">
+    <img src="/src/img/copyright.svg" alt="">
+    <h2>copyright / Kevin / one demo</h2>
+    
+</div>
     </footer>
 
 
