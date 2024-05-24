@@ -13,13 +13,13 @@ cellbuttonn.forEach((button, index) => {
         if (toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "X";
             pulserCounter();
-            allXPosicionsWin() ? nombreUsuario.appendChild(textoh1).textContent = "Winner 'X' 🏆  and lost 'O' 💥!" : nombreUsuario.appendChild(textoh1);
+            allXPosicionsWin() ? nombreUsuario.appendChild(textoh1).textContent = "Winner 'X' 🏆" : nombreUsuario.appendChild(textoh1);
             nombreUsuario.appendChild(textoh1);
         }
         if (!toggleFunction(counter) && cellbuttonn[index].textContent == "") {
             cellbuttonn[index].textContent = "O";
             pulserCounter();
-            allOPosicionsWin() ? nombreUsuario.appendChild(textoh1).textContent = "Winer O" : nombreUsuario.appendChild(textoh1);
+            allOPosicionsWin() ? nombreUsuario.appendChild(textoh1).textContent = "Winner 'O' 🏆" : nombreUsuario.appendChild(textoh1);
         }
     });
 });

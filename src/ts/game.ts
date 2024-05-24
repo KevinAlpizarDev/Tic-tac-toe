@@ -19,7 +19,7 @@ const backgroundFunction = (wichBoton:  HTMLElement | null, typeMouseEvent: stri
 backgroundFunction(mode1,"mouseover", "url('../img/Play-Arcade.png" )
 backgroundFunction(mode2,"mouseover", "url('../img/The-Mind-Flayer..png")
 //CAMBIO VISUAL DEL BACKGROUND CON MOUSEOVER DE LOA BOTONES
-backgroundFunction(mode1,"mouseout", "url('../img/mv.jpg" )
-backgroundFunction(mode2,"mouseout", "url('../img/mv.jpg")
+backgroundFunction(mode1,"mouseout", "url('../img/game.jpg" )
+backgroundFunction(mode2,"mouseout", "url('../img/game.jpg")
 //FUNCION REDIRECCION
 const redirectFuntion = (where: string) => location.href = where;

@@ -12,7 +12,7 @@ cellButtons.forEach((button, index) => {
             validateFunction();
         }, 1000);
         demoPulser();
-        allPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "En buena hora" : nombreUsuario2.appendChild(textoh12);
+        allXPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS VIVO" : nombreUsuario2.appendChild(textoh12);
     });
 });
 const validateFunction = () => {
@@ -24,6 +24,7 @@ const validateFunction = () => {
         if (spaces.length > 0) {
             let secondIndex = Math.floor(Math.random() * spaces.length);
             cellButtons[i].innerHTML = "O";
+            allOPosicionsWin2() ? nombreUsuario2.appendChild(textoh12).textContent = "ESTÁS muerto" : nombreUsuario2.appendChild(textoh12);
             return spaces[secondIndex];
         }
     }
@@ -31,22 +32,24 @@ const validateFunction = () => {
 const firstCaracter2 = "X";
 const secondCaracter2 = "O";
 const validate2 = (position, caracter) => cellButtons[position].textContent == caracter && cellButtons[position].textContent == caracter && cellButtons[position].textContent == caracter;
-const allPosicionsWin2 = () => {
+const allXPosicionsWin2 = () => {
     return (validate2(3, firstCaracter2) && validate2(4, firstCaracter2) && validate2(5, firstCaracter2)) ||
-        validate2(3, secondCaracter2) && validate2(4, secondCaracter2) && validate2(5, secondCaracter2) ||
         validate2(0, firstCaracter2) && validate2(1, firstCaracter2) && validate2(2, firstCaracter2) ||
-        validate2(0, secondCaracter2) && validate2(1, secondCaracter2) && validate2(2, secondCaracter2) ||
         (validate2(6, firstCaracter2) && validate2(7, firstCaracter2) && validate2(8, firstCaracter2)) ||
-        validate2(6, secondCaracter2) && validate2(7, secondCaracter2) && validate2(8, secondCaracter2) ||
         (validate2(0, firstCaracter2) && validate2(3, firstCaracter2) && validate2(6, firstCaracter2)) ||
-        validate2(0, secondCaracter2) && validate2(3, secondCaracter2) && validate2(6, secondCaracter2) ||
         validate2(1, firstCaracter2) && validate2(4, firstCaracter2) && validate2(7, firstCaracter2) ||
-        validate2(1, secondCaracter2) && validate2(4, secondCaracter2) && validate2(7, secondCaracter2) ||
         (validate2(2, firstCaracter2) && validate2(5, firstCaracter2) && validate2(8, firstCaracter2)) ||
-        validate2(2, secondCaracter2) && validate2(5, secondCaracter2) && validate2(8, secondCaracter2) ||
         (validate2(0, firstCaracter2) && validate2(4, firstCaracter2) && validate2(8, firstCaracter2)) ||
+        (validate2(2, firstCaracter2) && validate2(4, firstCaracter2) && validate2(6, firstCaracter2));
+};
+const allOPosicionsWin2 = () => {
+    return validate2(3, secondCaracter2) && validate2(4, secondCaracter2) && validate2(5, secondCaracter2) ||
+        validate2(0, secondCaracter2) && validate2(1, secondCaracter2) && validate2(2, secondCaracter2) ||
+        validate2(6, secondCaracter2) && validate2(7, secondCaracter2) && validate2(8, secondCaracter2) ||
+        validate2(0, secondCaracter2) && validate2(3, secondCaracter2) && validate2(6, secondCaracter2) ||
+        validate2(1, secondCaracter2) && validate2(4, secondCaracter2) && validate2(7, secondCaracter2) ||
+        validate2(2, secondCaracter2) && validate2(5, secondCaracter2) && validate2(8, secondCaracter2) ||
         validate2(0, secondCaracter2) && validate2(4, secondCaracter2) && validate2(8, secondCaracter2) ||
-        (validate2(2, firstCaracter2) && validate2(4, firstCaracter2) && validate2(6, firstCaracter2)) ||
         validate2(2, secondCaracter2) && validate2(4, secondCaracter2) && validate2(6, secondCaracter2);
 };
 const resetButton2 = document.getElementById('reset-button');

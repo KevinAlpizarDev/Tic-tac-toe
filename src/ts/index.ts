@@ -44,7 +44,7 @@ const play = ( id: HTMLMediaElement) => id.play()
 enjoyButton?.addEventListener("mouseover", function () {
 
     mystical.src="/src/sounds/mystical.mp3"
-    console.log(mystical)
+    // console.log(mystical)
   mystical.play()
 })
 
